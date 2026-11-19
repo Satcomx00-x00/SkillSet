@@ -1,0 +1,8 @@
+{
+  "name": "code-typescript",
+  "description": "TypeScript: strict typing, schema-validated I/O and modern tooling (Bun, Biome, Vitest, tsconfig).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
