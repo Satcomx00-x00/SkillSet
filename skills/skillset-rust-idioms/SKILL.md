@@ -1,5 +1,5 @@
 ---
-name: rust-idioms
+name: skillset-rust-idioms
 description: Write idiomatic, Clippy-clean Rust (2024 edition) - ownership and borrowing patterns, error handling with thiserror/anyhow, traits, iterators, and crate layout. Use when writing, reviewing or refactoring Rust, fixing borrow-checker errors, or designing a crate's public API.
 ---
 

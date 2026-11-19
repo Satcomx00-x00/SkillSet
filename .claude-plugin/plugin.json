@@ -1,7 +1,7 @@
 {
   "name": "code-rust",
   "description": "Rust: idiomatic ownership, error handling, async with Tokio, Clippy-clean code, and porting other languages to Rust (rust-anything).",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Satcomx00-x00"
   }

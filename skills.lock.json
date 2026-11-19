@@ -1,13 +1,13 @@
 {
   "version": 1,
   "skills": {
-    "rust-anything": {
+    "skillset-rust-anything": {
       "repo": "erkamyaman/rust-anything",
       "ref": "main",
-      "commit": "e24f7e1a54d7fcfd6eca09708cc17842c827ce85",
+      "commit": "a17a9e7060e2e0ece83c6fe93dce5aa0f43e0d13",
       "path": "skills/rust-anything",
       "license": "MIT License",
-      "integrity": "sha256-xckyXGdp/cYFyUGhIhl8pp65pqX0jDKYiYC0fzAvA2o="
+      "integrity": "sha256-Lnt2BWr0u5PvEvwj7rszPd+OVqjb8xLaF9K/uichsXc="
     }
   }
 }

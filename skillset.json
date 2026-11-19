@@ -3,7 +3,7 @@
   "info": {
     "commands": [
       {
-        "run": "/rust-anything",
+        "run": "/skillset-rust-anything",
         "does": "Ask the agent to port a function, module or whole app to Rust with record/diff/gate checks"
       }
     ],
@@ -28,7 +28,8 @@
       "path": "skills",
       "skills": [
         "rust-anything"
-      ]
+      ],
+      "source": "rust-anything"
     }
   ]
 }

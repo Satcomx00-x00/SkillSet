@@ -4,9 +4,9 @@ Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean co
 
 | Skill | Source |
 | --- | --- |
-| `rust-idioms` | custom |
-| `rust-async` | custom |
-| `rust-anything` | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) (MIT, vendored, weekly updates) |
+| `skillset-rust-idioms` | custom |
+| `skillset-rust-async` | custom |
+| `skillset-rust-anything` | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) (MIT, vendored, weekly updates) |
 
 | MCP server | Needs |
 | --- | --- |

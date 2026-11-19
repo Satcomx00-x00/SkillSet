@@ -1,5 +1,5 @@
 ---
-name: rust-async
+name: skillset-rust-async
 description: Build async Rust services with Tokio - runtime setup, task spawning, cancellation, channels, timeouts, and tracing; avoid blocking and lock-across-await bugs. Use when writing async Rust, axum/tonic/reqwest code, or debugging hangs, deadlocks or slow async code.
 ---
 
