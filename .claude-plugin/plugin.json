@@ -1,7 +1,7 @@
 {
   "name": "coding",
-  "description": "General software engineering: TDD, debugging, code review, strict TypeScript, commits.",
-  "version": "0.1.0",
+  "description": "Language-agnostic software engineering: TDD, debugging, design, code review, commits.",
+  "version": "0.2.0",
   "author": {
     "name": "Satcomx00-x00"
   }

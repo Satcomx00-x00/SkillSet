@@ -1,10 +1,9 @@
 # coding
 
-General software engineering: TDD, debugging, code review, strict TypeScript, commits.
+Language-agnostic software engineering: TDD, debugging, design, code review, commits. Language skills live on `code-typescript`, `code-python`, `code-rust`.
 
 | Skill | Source |
 | --- | --- |
-| `typescript-strict` | custom |
 | `conventional-commits` | custom |
 | `tdd`, `diagnosing-bugs`, `codebase-design`, `code-review` | [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, vendored) |
 | `ponytail`, `ponytail-review` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT, vendored) |
