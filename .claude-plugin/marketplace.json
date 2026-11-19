@@ -1,28 +1,76 @@
 {
   "name": "skillset",
   "description": "Topic-scoped Agent Skills + MCP servers. One topic per git branch.",
-  "owner": { "name": "Satcomx00-x00", "url": "https://github.com/Satcomx00-x00" },
+  "owner": {
+    "name": "Satcomx00-x00",
+    "url": "https://github.com/Satcomx00-x00"
+  },
   "plugins": [
     {
       "name": "coding",
-      "description": "General software engineering: TDD, debugging, code review, strict TypeScript, commits. MCP: context7, sequential-thinking, GitHub.",
+      "description": "Language-agnostic software engineering: TDD, debugging, design, code review, commits. MCP: context7, sequential-thinking, GitHub.",
       "category": "development",
-      "tags": ["coding", "typescript", "tdd", "review"],
-      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "coding" }
+      "tags": ["coding", "tdd", "debugging", "review"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "coding"
+      }
+    },
+    {
+      "name": "code-typescript",
+      "description": "TypeScript: strict typing, schema-validated I/O and modern tooling (Bun, Biome, Vitest, tsconfig).",
+      "category": "development",
+      "tags": ["typescript", "bun", "biome"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "code-typescript"
+      }
+    },
+    {
+      "name": "code-python",
+      "description": "Python: typed, modern Python with uv, Ruff, Pyright and pytest.",
+      "category": "development",
+      "tags": ["python", "uv", "ruff", "pytest"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "code-python"
+      }
+    },
+    {
+      "name": "code-rust",
+      "description": "Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean code.",
+      "category": "development",
+      "tags": ["rust", "tokio", "clippy"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "code-rust"
+      }
     },
     {
       "name": "game-dev",
       "description": "Game development with Godot 4: GDScript conventions, game loop architecture. MCP: godot-mcp.",
       "category": "game-development",
       "tags": ["gamedev", "godot", "gdscript"],
-      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "game-dev" }
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "game-dev"
+      }
     },
     {
       "name": "3d-dev",
       "description": "3D content pipelines: Blender Python scripting and glTF export/optimisation. MCP: blender-mcp.",
       "category": "3d",
       "tags": ["3d", "blender", "gltf"],
-      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "3d-dev" }
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "3d-dev"
+      }
     }
   ]
 }

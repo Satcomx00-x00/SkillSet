@@ -2,13 +2,16 @@
 
 Topic-scoped [Agent Skills](https://agentskills.io) + MCP servers. **`main` holds the tooling; each topic lives on its own branch.**
 
-| Topic    | Branch                            | Contents                                                                                     |
-| -------- | --------------------------------- | -------------------------------------------------------------------------------------------- |
-| Coding   | [`coding`](../../tree/coding)     | TDD, debugging, code review, strict TS, commits · MCP: context7, sequential-thinking, GitHub |
-| Game dev | [`game-dev`](../../tree/game-dev) | Godot 4 / GDScript, game loop architecture · MCP: godot-mcp                                  |
-| 3D dev   | [`3d-dev`](../../tree/3d-dev)     | Blender Python, glTF pipeline · MCP: blender-mcp                                             |
+| Topic      | Branch                                          | Contents                                                                                                            |
+| ---------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Coding     | [`coding`](../../tree/coding)                   | Language-agnostic engineering: TDD, debugging, design, review, commits · MCP: context7, sequential-thinking, GitHub |
+| TypeScript | [`code-typescript`](../../tree/code-typescript) | Strict typing, Zod at boundaries, Bun/Biome/Vitest tooling                                                          |
+| Python     | [`code-python`](../../tree/code-python)         | Typed Python with uv, Ruff, Pyright, pytest                                                                         |
+| Rust       | [`code-rust`](../../tree/code-rust)             | Idiomatic Rust, error handling, async Tokio                                                                         |
+| Game dev   | [`game-dev`](../../tree/game-dev)               | Godot 4 / GDScript, game loop architecture · MCP: godot-mcp                                                         |
+| 3D dev     | [`3d-dev`](../../tree/3d-dev)                   | Blender Python, glTF pipeline · MCP: blender-mcp                                                                    |
 
-The list is generated from [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json), the single source of truth.
+The list mirrors [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json), the single source of truth.
 
 ## Install
 
@@ -17,7 +20,7 @@ Pick whichever fits your toolchain. All of them read the same branch.
 ```bash
 # 1. SkillSet CLI: skills for every agent + MCP config (npm / bun / pnpm)
 npx skill-set add coding              # or: bunx skill-set add coding
-npx skill-set add coding game-dev -a claude-code -a cursor -m claude -m vscode -y
+npx skill-set add coding code-typescript -a claude-code -a cursor -m claude -m vscode -y
 npx skill-set list
 
 # 2. Skills only, via the standard skills CLI (40+ agents)
@@ -77,7 +80,7 @@ Write custom skills directly in `skills/`. Import third-party skills by listing 
 }
 ```
 
-`skillset sync` sparse-clones each repo, copies the skill folders (plus upstream `LICENSE`) into `skills/`, and pins them in `skills.lock.json`. Vendoring means every install path above works offline from one branch, with no runtime fetches from third parties. `skillset validate` fails if a vendored skill is edited by hand, so local changes go in a renamed custom skill. A weekly workflow on `main` re-syncs each topic and opens a PR with the upstream diff.
+`skillset sync` sparse-clones each repo, copies the skill folders (plus upstream `LICENSE`) into `skills/`, and pins them in `skills.lock.json`. Vendoring means every install path above works offline from one branch, with no runtime fetches from third parties. `skillset validate` fails if a vendored skill is edited by hand, so local changes go in a renamed custom skill. Every Monday the `sync-imports` workflow on `main` re-syncs each topic that has imports and opens a PR against that topic branch with the upstream diff (needs _Settings › Actions › General › Allow GitHub Actions to create and approve pull requests_).
 
 ## Add a topic
 
