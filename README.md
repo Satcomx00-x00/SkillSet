@@ -14,7 +14,7 @@ Game development with Godot 4: GDScript conventions, game loop architecture.
 ## Install
 
 ```bash
-npx topic-skillset add game-dev
+npx skill-set add game-dev
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/game-dev
 /plugin install game-dev@skillset   # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
