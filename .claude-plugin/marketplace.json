@@ -41,7 +41,7 @@
     },
     {
       "name": "code-rust",
-      "description": "Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean code.",
+      "description": "Rust: idiomatic ownership, error handling, async with Tokio, Clippy-clean code, and porting other languages to Rust (rust-anything). MCP: rust-anything.",
       "category": "development",
       "tags": ["rust", "tokio", "clippy"],
       "source": {
