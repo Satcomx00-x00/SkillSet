@@ -1,5 +1,5 @@
 ---
-name: conventional-commits
+name: skillset-conventional-commits
 description: Split work into small, reviewable commits with Conventional Commits messages. Use when committing, writing a commit message, preparing a PR, or when the user asks for clean or granular git history.
 ---
 
