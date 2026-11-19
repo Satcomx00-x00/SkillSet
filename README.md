@@ -27,7 +27,7 @@ npx topic-skillset list
 
 # 2. Skills only, via the standard skills CLI (40+ agents)
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/coding
-npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/coding --skill tdd
+npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/coding --skill skillset-mattpocock-tdd
 
 # 3. Claude Code plugin marketplace (skills + MCP, auto-updates)
 /plugin marketplace add Satcomx00-x00/SkillSet
@@ -61,9 +61,22 @@ skillset.json                # external skills to vendor
 skills.lock.json             # pinned commit + content hash per vendored skill
 ```
 
+## Skill names: `skillset-<source>-<skill>`
+
+Every installed skill says where it comes from. Agent Skills names allow only lowercase letters, digits and hyphens, so `skillset:mattpocock:tdd` is spelled **`skillset-mattpocock-tdd`**:
+
+| Kind                                           | Name                        | Example                         |
+| ---------------------------------------------- | --------------------------- | ------------------------------- |
+| Custom (written here)                          | `skillset-<skill>`          | `skillset-conventional-commits` |
+| Imported                                       | `skillset-<source>-<skill>` | `skillset-mattpocock-tdd`       |
+| Imported, skill already starts with the source | `skillset-<skill>`          | `skillset-ponytail-review`      |
+| Generated setup orchestrator                   | `skillset-setup`            | `/skillset-setup`               |
+
+`<source>` defaults to the repo owner (kebab-cased); set `"source"` on an import to override it. `skillset sync` renames vendored skills and rewrites `/old-name` slash commands inside them, and `skillset validate` warns on custom skills without the `skillset-` prefix. Claude Code plugin installs add the topic in front: `/coding:skillset-mattpocock-tdd`.
+
 ## Custom vs imported skills
 
-Write custom skills directly in `skills/`. Import third-party skills by listing them in `skillset.json`:
+Write custom skills directly in `skills/<name>/`, named `skillset-<skill>`. Import third-party skills by listing them in `skillset.json`:
 
 ```json
 {
@@ -76,7 +89,8 @@ Write custom skills directly in `skills/`. Import third-party skills by listing 
     },
     {
       "repo": "DietrichGebert/ponytail",
-      "skills": ["ponytail", { "name": "ponytail-review", "as": "lazy-review" }]
+      "source": "ponytail",
+      "skills": ["ponytail", { "name": "ponytail-review", "as": "skillset-lazy-review" }]
     }
   ]
 }
@@ -86,7 +100,7 @@ Write custom skills directly in `skills/`. Import third-party skills by listing 
 
 ## After install: summary banner
 
-`skillset add` ends with an ASCII summary of each topic: its skills, MCP servers, the slash commands to type in your agent (`/setup` and other user-only skills are detected automatically), any CLI to run once in your terminal, and notes. Show it again any time with `skillset info <topic>` (or `skillset info .` inside a topic checkout).
+`skillset add` ends with an ASCII summary of each topic: its skills, MCP servers, the slash commands to type in your agent (`/skillset-setup` and other user-only skills are detected automatically), any CLI to run once in your terminal, and notes. Show it again any time with `skillset info <topic>` (or `skillset info .` inside a topic checkout).
 
 Topic authors add the extra lines in `skillset.json`:
 
@@ -102,11 +116,11 @@ Topic authors add the extra lines in `skillset.json`:
 }
 ```
 
-## `/setup`: one command for every skill pack's setup
+## `/skillset-setup`: one command for every skill pack's setup
 
-Some imported packs ship a one-time setup skill (e.g. `setup-matt-pocock-skills` configures the issue tracker, triage labels and domain docs). `skillset sync` vendors every `setup-*` skill found next to an import (opt out per import with `"setup": false`) and generates a `setup` skill in that topic.
+Some imported packs ship a one-time setup skill (e.g. `skillset-mattpocock-setup-matt-pocock-skills` configures the issue tracker, triage labels and domain docs). `skillset sync` vendors every `setup-*` skill found next to an import (opt out per import with `"setup": false`) and generates a `skillset-setup` skill in that topic.
 
-In your agent, type **`/setup`** (Claude Code plugin installs: `/<topic>:setup`). It finds every installed `setup-*` skill across all your topics, asks once which to run, then runs them one by one. `/setup setup-matt-pocock-skills` runs just that one. `skillset add` prints a reminder when a topic includes setup skills.
+In your agent, type **`/skillset-setup`** (Claude Code plugin installs: `/<topic>:skillset-setup`). It finds every installed setup skill (`setup-*` or `*-setup-*`) across all your topics, asks once which to run, then runs them one by one. `/skillset-setup skillset-mattpocock-setup-matt-pocock-skills` runs just that one. `skillset add` prints a reminder when a topic includes setup skills.
 
 The generated skill is identical in every topic, so installing several topics never conflicts.
 

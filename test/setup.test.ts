@@ -11,14 +11,28 @@ const skillsDir = async (...names: string[]) => {
   await Promise.all(names.map((n) => mkdir(join(dir, n), { recursive: true })));
   return dir;
 };
-const setupMd = (dir: string) => join(dir, 'setup/SKILL.md');
+const setupMd = (dir: string) => join(dir, 'skillset-setup/SKILL.md');
 
 describe('syncSetupSkill', () => {
-  test('generates /setup when a setup-* skill exists', async () => {
-    const dir = await skillsDir('tdd', 'setup-matt-pocock-skills');
+  test('generates /skillset-setup when a qualified setup skill exists', async () => {
+    const dir = await skillsDir(
+      'skillset-mattpocock-tdd',
+      'skillset-mattpocock-setup-matt-pocock-skills',
+    );
     await syncSetupSkill(dir);
     const md = await readFile(setupMd(dir), 'utf8');
-    expect(frontmatter(md)).toMatchObject({ name: 'setup', 'disable-model-invocation': true });
+    expect(frontmatter(md)).toMatchObject({
+      name: 'skillset-setup',
+      'disable-model-invocation': true,
+    });
+  });
+
+  test('replaces the legacy generated setup skill', async () => {
+    const dir = await skillsDir('setup', 'setup-x');
+    await writeFile(join(dir, 'setup/SKILL.md'), `---\nname: setup\n---\n${GENERATED_MARKER}\n`);
+    await syncSetupSkill(dir);
+    expect(await Bun.file(join(dir, 'setup/SKILL.md')).exists()).toBe(false);
+    expect(await Bun.file(setupMd(dir)).exists()).toBe(true);
   });
 
   test('removes generated /setup once no setup-* skill remains', async () => {
@@ -30,8 +44,8 @@ describe('syncSetupSkill', () => {
   });
 
   test('never overwrites a hand-written setup skill', async () => {
-    const dir = await skillsDir('setup', 'setup-x');
-    await writeFile(setupMd(dir), '---\nname: setup\ndescription: mine\n---\n');
+    const dir = await skillsDir('skillset-setup', 'setup-x');
+    await writeFile(setupMd(dir), '---\nname: skillset-setup\ndescription: mine\n---\n');
     await syncSetupSkill(dir);
     expect(await readFile(setupMd(dir), 'utf8')).not.toContain(GENERATED_MARKER);
   });

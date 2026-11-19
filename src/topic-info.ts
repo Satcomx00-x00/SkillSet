@@ -9,7 +9,7 @@ import {
   StdioServer,
   TopicConfigSchema,
 } from './schema.ts';
-import { SETUP_PREFIX, SETUP_SKILL } from './setup-skill.ts';
+import { isSetupSkill, SETUP_SKILL } from './setup-skill.ts';
 import { frontmatter } from './skill-files.ts';
 import type { TopicSource } from './source.ts';
 import { CONFIG_FILE, LOCK_FILE } from './sync.ts';
@@ -77,7 +77,7 @@ export const loadTopicSummary = async (
   const info = config?.info ?? { commands: [], cli: [], notes: [] };
 
   const autoCommands = skills
-    .filter((s) => s.userOnly || s.name === SETUP_SKILL || s.name.startsWith(SETUP_PREFIX))
+    .filter((s) => s.userOnly || s.name === SETUP_SKILL || isSetupSkill(s.name))
     .map((s) => ({ label: `/${s.name}`, text: s.description }));
 
   return {

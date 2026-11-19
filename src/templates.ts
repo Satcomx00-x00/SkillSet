@@ -12,8 +12,8 @@ export const topicFiles = (name: string, description: string): Record<string, st
   }),
   'skillset.json': json({ $schema: `${SCHEMA_BASE}/skillset.schema.json`, imports: [] }),
   '.mcp.json': json({ mcpServers: {} }),
-  [`skills/${name}-basics/SKILL.md`]: `---
-name: ${name}-basics
+  [`skills/skillset-${name}-basics/SKILL.md`]: `---
+name: skillset-${name}-basics
 description: TODO one sentence on what this skill does and when the agent should use it.
 ---
 

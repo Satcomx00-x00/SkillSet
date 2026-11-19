@@ -69,6 +69,11 @@
             "type": "string",
             "pattern": "^[\\w.-]+\\/[\\w.-]+$"
           },
+          "source": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
           "ref": {
             "default": "HEAD",
             "type": "string",
