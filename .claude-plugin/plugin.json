@@ -1,0 +1,8 @@
+{
+  "name": "security",
+  "description": "Offensive security for authorized testing: 83 bug-bounty / red-team skills vendored from Claude-BugHunter (hunt-* web vuln classes, framework & enterprise attack chains, recon/OSINT, triage & reporting).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
