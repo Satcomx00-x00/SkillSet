@@ -93,6 +93,17 @@
         "repo": "Satcomx00-x00/SkillSet",
         "ref": "k8s-infra"
       }
+    },
+    {
+      "name": "security",
+      "description": "Offensive security for authorized testing: 83 bug-bounty / red-team skills (hunt-* web vuln classes, framework & enterprise attack chains, recon/OSINT, triage & reporting), vendored from Claude-BugHunter.",
+      "category": "security",
+      "tags": ["security", "bug-bounty", "red-team", "pentest", "recon", "osint"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "security"
+      }
     }
   ]
 }
