@@ -1,0 +1,8 @@
+{
+  "name": "code-python",
+  "description": "Python: typed, modern Python with uv, Ruff, Pyright and pytest.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
