@@ -41,6 +41,14 @@
       "license": "MIT License",
       "integrity": "sha256-G0bFu6UO2CHcUhHqfcW6GDdn7Yj86ZLm+rBKCkYwKeU="
     },
+    "setup-matt-pocock-skills": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/setup-matt-pocock-skills",
+      "license": "MIT License",
+      "integrity": "sha256-KcnfIHYAK6L95FNy/KhxiynK6q/zd6RKt6y4GhWuH9E="
+    },
     "tdd": {
       "repo": "mattpocock/skills",
       "ref": "main",
