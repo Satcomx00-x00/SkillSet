@@ -10,12 +10,7 @@
       "name": "coding",
       "description": "Language-agnostic software engineering: TDD, debugging, design, code review, commits. MCP: context7, sequential-thinking, GitHub.",
       "category": "development",
-      "tags": [
-        "coding",
-        "tdd",
-        "debugging",
-        "review"
-      ],
+      "tags": ["coding", "tdd", "debugging", "review"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -26,11 +21,7 @@
       "name": "code-typescript",
       "description": "TypeScript: strict typing, schema-validated I/O and modern tooling (Bun, Biome, Vitest, tsconfig).",
       "category": "development",
-      "tags": [
-        "typescript",
-        "bun",
-        "biome"
-      ],
+      "tags": ["typescript", "bun", "biome"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -41,12 +32,7 @@
       "name": "code-python",
       "description": "Python: typed, modern Python with uv, Ruff, Pyright and pytest.",
       "category": "development",
-      "tags": [
-        "python",
-        "uv",
-        "ruff",
-        "pytest"
-      ],
+      "tags": ["python", "uv", "ruff", "pytest"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -57,11 +43,7 @@
       "name": "code-rust",
       "description": "Rust: idiomatic ownership, error handling, async with Tokio, Clippy-clean code, and porting other languages to Rust (rust-anything). MCP: rust-anything.",
       "category": "development",
-      "tags": [
-        "rust",
-        "tokio",
-        "clippy"
-      ],
+      "tags": ["rust", "tokio", "clippy"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -72,11 +54,7 @@
       "name": "game-dev",
       "description": "Game development with Godot 4: GDScript conventions, game loop architecture. MCP: godot-mcp.",
       "category": "game-development",
-      "tags": [
-        "gamedev",
-        "godot",
-        "gdscript"
-      ],
+      "tags": ["gamedev", "godot", "gdscript"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -87,11 +65,7 @@
       "name": "3d-dev",
       "description": "3D content pipelines: Blender Python scripting and glTF export/optimisation. MCP: blender-mcp.",
       "category": "3d",
-      "tags": [
-        "3d",
-        "blender",
-        "gltf"
-      ],
+      "tags": ["3d", "blender", "gltf"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -102,13 +76,7 @@
       "name": "web",
       "description": "Web development: frontend (React, accessibility, performance) and backend (HTTP API design, auth, data). MCP: Playwright.",
       "category": "development",
-      "tags": [
-        "web",
-        "frontend",
-        "backend",
-        "react",
-        "api"
-      ],
+      "tags": ["web", "frontend", "backend", "react", "api"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -119,12 +87,7 @@
       "name": "k8s-infra",
       "description": "Kubernetes infrastructure: production-ready manifests, Helm/Kustomize, and cluster troubleshooting. MCP: kubernetes (read-only).",
       "category": "infrastructure",
-      "tags": [
-        "kubernetes",
-        "helm",
-        "kustomize",
-        "devops"
-      ],
+      "tags": ["kubernetes", "helm", "kustomize", "devops"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
@@ -135,14 +98,7 @@
       "name": "security",
       "description": "Offensive security for authorized testing: 83 bug-bounty / red-team skills (hunt-* web vuln classes, framework & enterprise attack chains, recon/OSINT, triage & reporting), vendored from Claude-BugHunter.",
       "category": "security",
-      "tags": [
-        "security",
-        "bug-bounty",
-        "red-team",
-        "pentest",
-        "recon",
-        "osint"
-      ],
+      "tags": ["security", "bug-bounty", "red-team", "pentest", "recon", "osint"],
       "source": {
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
