@@ -4,8 +4,8 @@ TypeScript: strict typing, schema-validated I/O and modern tooling (Bun, Biome, 
 
 | Skill | Source |
 | --- | --- |
-| `typescript-strict` | custom |
-| `typescript-tooling` | custom |
+| `skillset-typescript-strict` | custom |
+| `skillset-typescript-tooling` | custom |
 
 No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) topic for engineering workflow skills and context7 docs lookup.
 

@@ -1,5 +1,5 @@
 ---
-name: typescript-strict
+name: skillset-typescript-strict
 description: Write and refactor TypeScript to strict, type-safe 2026 standards (strict tsconfig, schema-validated I/O, discriminated unions, no any). Use when writing, reviewing or migrating TypeScript, configuring tsconfig, or when the user asks for "typesafe" code.
 ---
 

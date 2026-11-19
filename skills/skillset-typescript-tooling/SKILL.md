@@ -1,5 +1,5 @@
 ---
-name: typescript-tooling
+name: skillset-typescript-tooling
 description: Set up or modernise a TypeScript project's toolchain - package manager, tsconfig, Biome lint/format, Vitest or bun test, build and publish (ESM, exports map). Use when scaffolding a TS/Node/Bun project, fixing module resolution errors, or replacing ESLint/Prettier/Jest/ts-node.
 ---
 
@@ -34,5 +34,5 @@ description: Set up or modernise a TypeScript project's toolchain - package mana
 ## Steps when modernising
 1. Remove ESLint/Prettier configs and deps; `biome init`, `biome migrate eslint --write`.
 2. Replace Jest with Vitest/bun test; keep test files next to sources.
-3. Tighten tsconfig (see `typescript-strict`), fix errors file by file.
+3. Tighten tsconfig (see `skillset-typescript-strict`), fix errors file by file.
 4. Add a single `check` script and run it in CI on every push.
