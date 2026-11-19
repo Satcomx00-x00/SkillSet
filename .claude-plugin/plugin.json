@@ -1,0 +1,8 @@
+{
+  "name": "k8s-infra",
+  "description": "Kubernetes infrastructure: production-ready manifests, Helm/Kustomize, and cluster troubleshooting.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
