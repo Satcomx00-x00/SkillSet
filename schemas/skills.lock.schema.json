@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "skills": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "maxLength": 64,
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string",
+            "pattern": "^[\\w.-]+\\/[\\w.-]+$"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "license": {
+            "type": ["string", "null"]
+          },
+          "integrity": {
+            "type": "string",
+            "format": "starts_with",
+            "pattern": "^sha256-.*"
+          }
+        },
+        "required": ["repo", "ref", "commit", "path", "license", "integrity"]
+      }
+    }
+  },
+  "required": ["version", "skills"]
+}

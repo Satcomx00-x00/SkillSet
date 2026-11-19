@@ -1,0 +1,28 @@
+{
+  "name": "skillset",
+  "description": "Topic-scoped Agent Skills + MCP servers. One topic per git branch.",
+  "owner": { "name": "Satcomx00-x00", "url": "https://github.com/Satcomx00-x00" },
+  "plugins": [
+    {
+      "name": "coding",
+      "description": "General software engineering: TDD, debugging, code review, strict TypeScript, commits. MCP: context7, sequential-thinking, GitHub.",
+      "category": "development",
+      "tags": ["coding", "typescript", "tdd", "review"],
+      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "coding" }
+    },
+    {
+      "name": "game-dev",
+      "description": "Game development with Godot 4: GDScript conventions, game loop architecture. MCP: godot-mcp.",
+      "category": "game-development",
+      "tags": ["gamedev", "godot", "gdscript"],
+      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "game-dev" }
+    },
+    {
+      "name": "3d-dev",
+      "description": "3D content pipelines: Blender Python scripting and glTF export/optimisation. MCP: blender-mcp.",
+      "category": "3d",
+      "tags": ["3d", "blender", "gltf"],
+      "source": { "source": "github", "repo": "Satcomx00-x00/SkillSet", "ref": "3d-dev" }
+    }
+  ]
+}

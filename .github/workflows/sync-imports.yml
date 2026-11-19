@@ -1,0 +1,34 @@
+# Weekly: re-vendor imported skills on every topic branch and open a PR per changed topic.
+name: sync-imports
+on:
+  schedule: [{ cron: "0 6 * * 1" }]
+  workflow_dispatch:
+permissions: { contents: write, pull-requests: write }
+jobs:
+  topics:
+    runs-on: ubuntu-latest
+    outputs: { names: "${{ steps.t.outputs.names }}" }
+    steps:
+      - uses: actions/checkout@v5
+      - id: t
+        run: echo "names=$(jq -c '[.plugins[].source.ref]' .claude-plugin/marketplace.json)" >> "$GITHUB_OUTPUT"
+  sync:
+    needs: topics
+    runs-on: ubuntu-latest
+    strategy: { fail-fast: false, matrix: { topic: "${{ fromJson(needs.topics.outputs.names) }}" } }
+    steps:
+      - uses: actions/checkout@v5
+        with: { path: .skillset }
+      - uses: actions/checkout@v5
+        with: { ref: "${{ matrix.topic }}", path: topic }
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile --cwd .skillset
+      - run: "[ -f topic/skillset.json ] && bun .skillset/src/cli.ts sync topic || true"
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          path: topic
+          base: "${{ matrix.topic }}"
+          branch: "sync/${{ matrix.topic }}"
+          title: "chore(${{ matrix.topic }}): sync imported skills"
+          commit-message: "chore(${{ matrix.topic }}): sync imported skills"
+          body: Re-vendored skills from `skillset.json` imports. Review upstream changes in the diff.
