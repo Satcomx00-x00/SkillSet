@@ -1,0 +1,8 @@
+{
+  "name": "web",
+  "description": "Web development: frontend (React, accessibility, performance) and backend (HTTP API design, auth, data).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
