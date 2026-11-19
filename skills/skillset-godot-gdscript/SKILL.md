@@ -1,5 +1,5 @@
 ---
-name: godot-gdscript
+name: skillset-godot-gdscript
 description: Write idiomatic, statically typed GDScript for Godot 4.x (scenes, nodes, signals, resources, autoloads). Use when creating or editing .gd/.tscn files, structuring a Godot project, or debugging Godot scripts.
 ---
 

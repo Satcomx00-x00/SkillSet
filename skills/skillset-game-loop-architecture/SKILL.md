@@ -1,5 +1,5 @@
 ---
-name: game-loop-architecture
+name: skillset-game-loop-architecture
 description: Design game runtime architecture - fixed-timestep loops, state machines, entity/component composition, input buffering and save data. Use when planning a game's structure, fixing jitter or framerate-dependent bugs, or choosing between ECS, scene trees and state machines (engine-agnostic).
 ---
 

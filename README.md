@@ -4,8 +4,8 @@ Game development with Godot 4: GDScript conventions, game loop architecture.
 
 | Skill | Source |
 | --- | --- |
-| `godot-gdscript` | custom |
-| `game-loop-architecture` | custom |
+| `skillset-godot-gdscript` | custom |
+| `skillset-game-loop-architecture` | custom |
 
 | MCP server | Needs |
 | --- | --- |
