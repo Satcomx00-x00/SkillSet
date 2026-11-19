@@ -22,7 +22,7 @@ After installing, type `/skillset-setup` in your agent (in Claude Code plugin in
 ## Install
 
 ```bash
-npx skill-set add coding
+npx topic-skillset add coding
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/coding
 # Claude Code
 /plugin marketplace add Satcomx00-x00/SkillSet
