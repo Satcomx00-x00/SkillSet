@@ -12,7 +12,7 @@ No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/Sk
 ## Install
 
 ```bash
-npx skill-set add code-python
+npx topic-skillset add code-python
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/code-python
 /plugin install code-python@skillset     # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
