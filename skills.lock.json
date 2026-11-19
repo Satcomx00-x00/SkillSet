@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "code-review": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/code-review",
+      "license": "MIT License",
+      "integrity": "sha256-nw8IBJQtnzia/QTEyuR4VI06k5n4LuDm59YTzdl1ZOM="
+    },
+    "codebase-design": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/codebase-design",
+      "license": "MIT License",
+      "integrity": "sha256-B1q/1/qHFoSdIlbUlJNJZUrZEIYI+IOrKU5VSsGD+WE="
+    },
+    "diagnosing-bugs": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/diagnosing-bugs",
+      "license": "MIT License",
+      "integrity": "sha256-sGZwiaswkfXO3odGxlXOAWIm+z8fWkvGyEOA6zpXKi8="
+    },
+    "ponytail": {
+      "repo": "DietrichGebert/ponytail",
+      "ref": "main",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "path": "skills/ponytail",
+      "license": "MIT License",
+      "integrity": "sha256-iLnw/VbEeYOKp2WpCpJ+cBahvhT8viZxIKgPrPgPcxI="
+    },
+    "ponytail-review": {
+      "repo": "DietrichGebert/ponytail",
+      "ref": "main",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "path": "skills/ponytail-review",
+      "license": "MIT License",
+      "integrity": "sha256-G0bFu6UO2CHcUhHqfcW6GDdn7Yj86ZLm+rBKCkYwKeU="
+    },
+    "tdd": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/tdd",
+      "license": "MIT License",
+      "integrity": "sha256-2H9eE+EjYYG96pmhIFFDTsJHZUisuVr/DpnvagE2eFA="
+    }
+  }
+}
