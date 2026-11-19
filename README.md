@@ -14,7 +14,7 @@
 ## Install
 
 ```bash
-npx skill-set add 3d-dev
+npx topic-skillset add 3d-dev
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/3d-dev
 /plugin install 3d-dev@skillset   # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
