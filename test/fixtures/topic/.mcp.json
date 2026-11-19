@@ -1,0 +1,1 @@
+{"mcpServers":{"gh":{"type":"http","url":"https://x/mcp","headers":{"Authorization":"Bearer ${GITHUB_TOKEN}"}}}}

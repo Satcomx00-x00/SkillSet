@@ -1,0 +1,50 @@
+{
+  "name": "topic-skillset",
+  "version": "0.1.0",
+  "description": "Install topic-scoped Agent Skills and MCP servers (one topic per git branch) into any coding agent.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satcomx00-x00/SkillSet.git"
+  },
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "mcp",
+    "claude-code",
+    "cursor",
+    "codex",
+    "cli"
+  ],
+  "bin": {
+    "skillset": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "schemas"
+  ],
+  "engines": {
+    "node": ">=22.4"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "dev": "bun src/cli.ts",
+    "typecheck": "tsc",
+    "lint": "biome check .",
+    "test": "bun test",
+    "schemas": "bun scripts/gen-schemas.ts",
+    "check": "npm run typecheck && npm run lint && npm test && bun src/cli.ts validate-marketplace"
+  },
+  "dependencies": {
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.8",
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
