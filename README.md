@@ -16,7 +16,7 @@ Pair with [`code-typescript`](https://github.com/Satcomx00-x00/SkillSet/tree/cod
 ## Install
 
 ```bash
-npx skill-set add web
+npx topic-skillset add web
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/web
 /plugin install web@skillset     # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
