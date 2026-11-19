@@ -2,9 +2,19 @@
 
 TypeScript: strict typing, schema-validated I/O and modern tooling (Bun, Biome, Vitest, tsconfig).
 
+| Skill | Source |
+| --- | --- |
+| `typescript-strict` | custom |
+| `typescript-tooling` | custom |
+
+No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) topic for engineering workflow skills and context7 docs lookup.
+
+## Install
+
 ```bash
-npx skill-set add code-typescript            # skills + MCP
-npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/code-typescript   # skills only
+npx skill-set add code-typescript            # or: npx skill-set add coding code-typescript
+npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/code-typescript
+/plugin install code-typescript@skillset     # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
 
-Claude Code: `/plugin marketplace add Satcomx00-x00/SkillSet` then `/plugin install code-typescript@skillset`.
+Add third-party skills to `skillset.json` and run `skillset sync`. Tooling lives on [`main`](https://github.com/Satcomx00-x00/SkillSet).
