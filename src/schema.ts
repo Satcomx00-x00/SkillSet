@@ -31,13 +31,13 @@ export const PluginManifestSchema = z.looseObject({
   version: z.string().regex(/^\d+\.\d+\.\d+/, 'must be semver'),
 });
 
-const StdioServer = z.looseObject({
+export const StdioServer = z.looseObject({
   type: z.literal('stdio').optional(),
   command: z.string().min(1),
   args: z.array(z.string()).optional(),
   env: stringMap.optional(),
 });
-const RemoteServer = z.looseObject({
+export const RemoteServer = z.looseObject({
   type: z.enum(['http', 'sse']),
   url: z.string().min(1),
   headers: stringMap.optional(),
@@ -53,9 +53,21 @@ export const SkillFrontmatterSchema = z.looseObject({
 
 const ImportedSkill = z.union([kebab, z.object({ name: kebab, as: kebab })]);
 
-/** `skillset.json` on a topic branch: external skills to vendor. */
+const Hint = z.object({ run: z.string().min(1), does: z.string().min(1) });
+
+/** Post-install guidance shown by `skillset add` / `skillset info`. */
+export const TopicInfoSchema = z.object({
+  /** Agent slash commands worth knowing (setup and user-only skills are added automatically). */
+  commands: z.array(Hint).default([]),
+  /** Shell commands the user should run once (extra CLIs, env vars). */
+  cli: z.array(Hint).default([]),
+  notes: z.array(z.string().min(1)).default([]),
+});
+
+/** `skillset.json` on a topic branch: external skills to vendor + post-install info. */
 export const TopicConfigSchema = z.object({
   $schema: z.string().optional(),
+  info: TopicInfoSchema.default({ commands: [], cli: [], notes: [] }),
   imports: z
     .array(
       z.object({
@@ -90,6 +102,7 @@ export type Marketplace = z.infer<typeof MarketplaceSchema>;
 export type McpServer = z.infer<typeof McpServerSchema>;
 export type McpConfig = z.infer<typeof McpConfigSchema>;
 export type TopicConfig = z.infer<typeof TopicConfigSchema>;
+export type TopicInfoConfig = z.infer<typeof TopicInfoSchema>;
 export type SkillImport = TopicConfig['imports'][number];
 export type Lock = z.infer<typeof LockSchema>;
 export type LockEntry = Lock['skills'][string];

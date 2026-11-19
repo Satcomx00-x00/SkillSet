@@ -5,6 +5,60 @@
     "$schema": {
       "type": "string"
     },
+    "info": {
+      "default": {
+        "commands": [],
+        "cli": [],
+        "notes": []
+      },
+      "type": "object",
+      "properties": {
+        "commands": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "run": {
+                "type": "string",
+                "minLength": 1
+              },
+              "does": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["run", "does"]
+          }
+        },
+        "cli": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "run": {
+                "type": "string",
+                "minLength": 1
+              },
+              "does": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["run", "does"]
+          }
+        },
+        "notes": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
     "imports": {
       "default": [],
       "type": "array",
