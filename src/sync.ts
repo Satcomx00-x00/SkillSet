@@ -1,4 +1,4 @@
-import { cp, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { type Exec, execOk } from './exec.ts';
@@ -10,7 +10,8 @@ import {
   type SkillImport,
   TopicConfigSchema,
 } from './schema.ts';
-import { dirIntegrity, renameSkill } from './skill-files.ts';
+import { GENERATED_MARKER, SETUP_PREFIX, SETUP_SKILL, setupSkill } from './setup-skill.ts';
+import { dirIntegrity, listSkillDirs, renameSkill } from './skill-files.ts';
 
 export const CONFIG_FILE = 'skillset.json';
 export const LOCK_FILE = 'skills.lock.json';
@@ -30,31 +31,46 @@ const licenseOf = async (root: string): Promise<{ file: string; id: string } | u
   return { file: join(root, file), id: firstLine.trim() };
 };
 
-/** Sparse, shallow clone of just the needed skill dirs; returns the checkout root and commit. */
+const git = (run: typeof execOk, root: string, ...args: string[]) =>
+  run('git', ['-C', root, ...args], { capture: true });
+
+/**
+ * Sparse, shallow clone of just the needed skill dirs (plus sibling `setup-*` skills unless disabled).
+ * Returns the checkout root, commit, and resolved skill list.
+ */
 const fetchImport = async (imp: SkillImport, run: typeof execOk) => {
   const root = await mkdtemp(join(tmpdir(), 'skillset-'));
   const branch = imp.ref === 'HEAD' ? [] : ['--branch', imp.ref];
+  const url = `https://github.com/${imp.repo}.git`;
   await run(
     'git',
-    [
-      'clone',
-      '-q',
-      '--depth',
-      '1',
-      '--filter=blob:none',
-      '--sparse',
-      ...branch,
-      `https://github.com/${imp.repo}.git`,
-      root,
-    ],
-    { capture: true },
+    ['clone', '-q', '--depth', '1', '--filter=blob:none', '--sparse', ...branch, url, root],
+    {
+      capture: true,
+    },
   );
-  await run(
-    'git',
-    ['-C', root, 'sparse-checkout', 'set', ...imp.skills.map((s) => `${imp.path}/${norm(s).name}`)],
-    { capture: true },
-  );
-  return { root, commit: await run('git', ['-C', root, 'rev-parse', 'HEAD'], { capture: true }) };
+  const listed = imp.skills.map(norm);
+  const siblings = imp.setup
+    ? (await git(run, root, 'ls-tree', '-d', '--name-only', 'HEAD', `${imp.path}/`))
+        .split('\n')
+        .map((p) => p.split('/').at(-1) ?? '')
+        .filter((n) => n.startsWith(SETUP_PREFIX) && !listed.some((s) => s.name === n))
+    : [];
+  const skills = [...listed, ...siblings.map((name) => ({ name, as: name }))];
+  await git(run, root, 'sparse-checkout', 'set', ...skills.map((s) => `${imp.path}/${s.name}`));
+  return { root, skills, commit: await git(run, root, 'rev-parse', 'HEAD') };
+};
+
+/** Writes (or removes) the generated `/setup` skill depending on whether any `setup-*` skill exists. */
+export const syncSetupSkill = async (skillsDir: string): Promise<void> => {
+  const dest = join(skillsDir, SETUP_SKILL);
+  const file = join(dest, 'SKILL.md');
+  const ours = !(await exists(file)) || (await readFile(file, 'utf8')).includes(GENERATED_MARKER);
+  if (!ours) return;
+  const hasSetup = (await listSkillDirs(skillsDir)).some((n) => n.startsWith(SETUP_PREFIX));
+  if (!hasSetup) return void (await rm(dest, { recursive: true, force: true }));
+  await mkdir(dest, { recursive: true });
+  await writeFile(file, setupSkill);
 };
 
 export interface SyncReport {
@@ -73,10 +89,11 @@ export const sync = async (dir: string, exec?: Exec): Promise<SyncReport> => {
   const skillsDir = join(dir, 'skills');
 
   for (const imp of config.imports) {
-    const { root, commit } = await fetchImport(imp, run);
+    const fetched = await fetchImport(imp, run);
+    const { root, commit } = fetched;
     try {
       const license = await licenseOf(root);
-      for (const { name, as } of imp.skills.map(norm)) {
+      for (const { name, as } of fetched.skills) {
         if (skills[as]) throw new Error(`Duplicate imported skill "${as}"`);
         const src = join(root, imp.path, name);
         const dest = join(skillsDir, as);
@@ -112,6 +129,7 @@ export const sync = async (dir: string, exec?: Exec): Promise<SyncReport> => {
   await Promise.all(removed.map((n) => rm(join(skillsDir, n), { recursive: true, force: true })));
   const sorted = Object.fromEntries(Object.entries(skills).sort(([a], [b]) => a.localeCompare(b)));
   await writeJson(join(dir, LOCK_FILE), { version: 1, skills: sorted } satisfies Lock);
+  await syncSetupSkill(skillsDir);
 
   const updated = Object.keys(skills).filter(
     (n) => old.skills[n]?.integrity !== skills[n]?.integrity,

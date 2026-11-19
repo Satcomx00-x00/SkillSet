@@ -84,6 +84,14 @@ Write custom skills directly in `skills/`. Import third-party skills by listing 
 
 `skillset sync` sparse-clones each repo, copies the skill folders (plus upstream `LICENSE`) into `skills/`, and pins them in `skills.lock.json`. Vendoring means every install path above works offline from one branch, with no runtime fetches from third parties. `skillset validate` fails if a vendored skill is edited by hand, so local changes go in a renamed custom skill. Every Monday the `sync-imports` workflow on `main` re-syncs each topic that has imports and opens a PR against that topic branch with the upstream diff (needs _Settings › Actions › General › Allow GitHub Actions to create and approve pull requests_).
 
+## `/setup`: one command for every skill pack's setup
+
+Some imported packs ship a one-time setup skill (e.g. `setup-matt-pocock-skills` configures the issue tracker, triage labels and domain docs). `skillset sync` vendors every `setup-*` skill found next to an import (opt out per import with `"setup": false`) and generates a `setup` skill in that topic.
+
+In your agent, type **`/setup`** (Claude Code plugin installs: `/<topic>:setup`). It finds every installed `setup-*` skill across all your topics, asks once which to run, then runs them one by one. `/setup setup-matt-pocock-skills` runs just that one. `skillset add` prints a reminder when a topic includes setup skills.
+
+The generated skill is identical in every topic, so installing several topics never conflicts.
+
 ## Add a topic
 
 ```bash

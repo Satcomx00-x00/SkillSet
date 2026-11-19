@@ -63,6 +63,8 @@ export const TopicConfigSchema = z.object({
         ref: z.string().min(1).default('HEAD'),
         path: z.string().default('skills'),
         skills: z.array(ImportedSkill).min(1),
+        /** Also vendor the repo's `setup-*` skills found next to the imported ones. */
+        setup: z.boolean().default(true),
       }),
     )
     .default([]),
