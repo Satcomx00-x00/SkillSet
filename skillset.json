@@ -1,11 +1,34 @@
 {
   "$schema": "https://raw.githubusercontent.com/Satcomx00-x00/SkillSet/main/schemas/skillset.schema.json",
+  "info": {
+    "commands": [
+      {
+        "run": "/rust-anything",
+        "does": "Ask the agent to port a function, module or whole app to Rust with record/diff/gate checks"
+      }
+    ],
+    "cli": [
+      {
+        "run": "npm install -g rust-anything",
+        "does": "Installs the rust-anything CLI the skill drives (or: cargo install rust-anything)"
+      },
+      {
+        "run": "curl https://sh.rustup.rs -sSf | sh",
+        "does": "Rust toolchain, if `cargo --version` fails"
+      }
+    ],
+    "notes": [
+      "rust-anything runs the original code to record its behaviour: keep that language's runtime installed (Node 22.6+, Python 3.9+, Go 1.21+, Ruby 3+, or JDK 17+)."
+    ]
+  },
   "imports": [
     {
       "repo": "erkamyaman/rust-anything",
       "ref": "main",
       "path": "skills",
-      "skills": ["rust-anything"]
+      "skills": [
+        "rust-anything"
+      ]
     }
   ]
 }
