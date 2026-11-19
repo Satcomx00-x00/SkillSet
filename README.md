@@ -9,7 +9,7 @@ Game development with Godot 4: GDScript conventions, game loop architecture.
 
 | MCP server | Needs |
 | --- | --- |
-| `godot` ([@coding-solo/godot-mcp](https://www.npmjs.com/package/@coding-solo/godot-mcp)) | Godot 4 installed, `GODOT_PATH` env var |
+| `godot` ([@coding-solo/godot-mcp](https://www.npmjs.com/package/@coding-solo/godot-mcp)) | Godot 4 installed (set `GODOT_PATH` if not auto-detected) |
 
 ## Install
 
