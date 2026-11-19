@@ -16,9 +16,9 @@ Pick whichever fits your toolchain. All of them read the same branch.
 
 ```bash
 # 1. SkillSet CLI: skills for every agent + MCP config (npm / bun / pnpm)
-npx topic-skillset add coding              # or: bunx topic-skillset add coding
-npx topic-skillset add coding game-dev -a claude-code -a cursor -m claude -m vscode -y
-npx topic-skillset list
+npx skill-set add coding              # or: bunx skill-set add coding
+npx skill-set add coding game-dev -a claude-code -a cursor -m claude -m vscode -y
+npx skill-set list
 
 # 2. Skills only, via the standard skills CLI (40+ agents)
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/coding
