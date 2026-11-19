@@ -67,6 +67,8 @@ export const sync = async (dir: string, exec?: Exec): Promise<SyncReport> => {
   const run: typeof execOk = exec ? async (...a) => (await exec(...a)).stdout.trim() : execOk;
   const config = await readJson(join(dir, CONFIG_FILE), TopicConfigSchema);
   const old = await readLock(dir);
+  if (!config.imports.length && !Object.keys(old.skills).length)
+    return { updated: [], removed: [] };
   const skills: Record<string, LockEntry> = {};
   const skillsDir = join(dir, 'skills');
 
