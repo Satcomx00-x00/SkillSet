@@ -8,6 +8,8 @@ Topic-scoped [Agent Skills](https://agentskills.io) + MCP servers. **`main` hold
 | TypeScript | [`code-typescript`](../../tree/code-typescript) | Strict typing, Zod at boundaries, Bun/Biome/Vitest tooling                                                          |
 | Python     | [`code-python`](../../tree/code-python)         | Typed Python with uv, Ruff, Pyright, pytest                                                                         |
 | Rust       | [`code-rust`](../../tree/code-rust)             | Idiomatic Rust, error handling, async Tokio                                                                         |
+| Web        | [`web`](../../tree/web)                         | Frontend (React, a11y, perf) + backend (API design, auth, data) · MCP: Playwright                                   |
+| Kubernetes | [`k8s-infra`](../../tree/k8s-infra)             | Production manifests, Helm/Kustomize, troubleshooting · MCP: kubernetes (read-only)                                 |
 | Game dev   | [`game-dev`](../../tree/game-dev)               | Godot 4 / GDScript, game loop architecture · MCP: godot-mcp                                                         |
 | 3D dev     | [`3d-dev`](../../tree/3d-dev)                   | Blender Python, glTF pipeline · MCP: blender-mcp                                                                    |
 
