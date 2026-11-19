@@ -1,5 +1,5 @@
 ---
-name: python-testing
+name: skillset-python-testing
 description: Write fast, reliable pytest suites - fixtures, parametrisation, property-based tests with Hypothesis, async tests, and coverage. Use when adding or fixing Python tests, setting up pytest config, or debugging flaky tests.
 ---
 

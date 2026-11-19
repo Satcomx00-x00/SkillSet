@@ -1,5 +1,5 @@
 ---
-name: python-typed
+name: skillset-python-typed
 description: Write modern, fully typed Python 3.12+ managed with uv, linted and formatted with Ruff, and type-checked strictly with Pyright or mypy; validate external data with Pydantic. Use when writing or refactoring Python, setting up pyproject.toml, or when the user asks for typesafe or idiomatic Python.
 ---
 

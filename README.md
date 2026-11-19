@@ -4,8 +4,8 @@ Python: typed, modern Python with uv, Ruff, Pyright and pytest.
 
 | Skill | Source |
 | --- | --- |
-| `python-typed` | custom |
-| `python-testing` | custom |
+| `skillset-python-typed` | custom |
+| `skillset-python-testing` | custom |
 
 No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) topic for engineering workflow skills.
 
