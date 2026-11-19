@@ -1,0 +1,12 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with: { repository: Satcomx00-x00/SkillSet, ref: main, path: .skillset }
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile --cwd .skillset
+      - run: bun .skillset/src/cli.ts validate .

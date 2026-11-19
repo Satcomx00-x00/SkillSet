@@ -1,0 +1,8 @@
+{
+  "name": "code-rust",
+  "description": "Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean code.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
