@@ -1,0 +1,8 @@
+{
+  "name": "coding",
+  "description": "General software engineering: TDD, debugging, code review, strict TypeScript, commits.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
