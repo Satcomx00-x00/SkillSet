@@ -2,16 +2,18 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
+import { renderBanner } from './banner.ts';
 import { DEFAULT_REPO, fetchJson, rawUrl } from './github.ts';
 import { exists } from './io.ts';
 import { mergeServers } from './mcp/merge.ts';
 import { detectTargets, isTargetId, type Scope, TARGET_IDS, target } from './mcp/targets.ts';
 import { localRegistry, MARKETPLACE_PATH, type Registry, remoteRegistry } from './registry.ts';
-import { LockSchema, McpConfigSchema, type Topic } from './schema.ts';
-import { SETUP_PREFIX } from './setup-skill.ts';
+import { McpConfigSchema, type Topic } from './schema.ts';
 import { type SkillInstaller, vercelSkills } from './skills.ts';
-import { LOCK_FILE, sync } from './sync.ts';
+import { githubSource, localSource, type TopicSource } from './source.ts';
+import { sync } from './sync.ts';
 import { topicFiles } from './templates.ts';
+import { loadTopicSummary } from './topic-info.ts';
 import { type Issue, validateMarketplace, validateTopic } from './validate.ts';
 
 const HELP = `skillset — topic-scoped Agent Skills + MCP servers (one topic per git branch)
@@ -19,6 +21,7 @@ const HELP = `skillset — topic-scoped Agent Skills + MCP servers (one topic pe
 Usage
   skillset list [--json]                    List topics
   skillset add <topic...> [options]         Install skills (all agents) + MCP servers
+  skillset info <topic|dir...>              Show what a topic contains and how to use it
   skillset sync [dir]                       Vendor imported skills from skillset.json
   skillset validate [dir]                   Validate a topic checkout
   skillset validate-marketplace [file]      Validate main's marketplace.json
@@ -90,13 +93,8 @@ const installMcp = async (topic: Topic) => {
   }
 };
 
-const hintSetup = async (topic: Topic) => {
-  const lock = await fetchJson(rawUrl(topic.repo, topic.ref, LOCK_FILE), LockSchema).catch(
-    () => undefined,
-  );
-  const setups = Object.keys(lock?.skills ?? {}).filter((n) => n.startsWith(SETUP_PREFIX));
-  if (setups.length) log(`  → run /setup in your agent to configure: ${setups.join(', ')}`);
-};
+const printSummary = async (name: string, src: TopicSource) =>
+  log(`\n${renderBanner(await loadTopicSummary(name, src))}\n`);
 
 const commands: Record<string, () => Promise<number>> = {
   async list() {
@@ -117,13 +115,23 @@ const commands: Record<string, () => Promise<number>> = {
           yes: o.yes,
         });
       await installMcp(topic);
-      await hintSetup(topic);
+      await printSummary(topic.name, githubSource(topic)).catch((e: unknown) =>
+        console.error(`  (summary unavailable: ${e instanceof Error ? e.message : String(e)})`),
+      );
     }
     return 0;
   },
   async sync() {
     const r = await sync(resolve(args[0] ?? '.'));
     log(`updated: ${r.updated.join(', ') || '∅'}  removed: ${r.removed.join(', ') || '∅'}`);
+    return 0;
+  },
+  async info() {
+    if (!args.length) throw new Error('info: missing <topic> or <dir>');
+    for (const a of args) {
+      const local = a.startsWith('.') || a.startsWith('/');
+      await printSummary(a, local ? localSource(resolve(a)) : githubSource(await registry.get(a)));
+    }
     return 0;
   },
   validate: async () => report(await validateTopic(resolve(args[0] ?? '.'))),
