@@ -1,5 +1,5 @@
 ---
-name: blender-python
+name: skillset-blender-python
 description: Script Blender 4.x/5.x with the bpy Python API - scene setup, mesh and material creation, modifiers, batch processing and headless rendering. Use when writing bpy scripts or add-ons, automating Blender, or driving Blender through the blender MCP server.
 ---
 

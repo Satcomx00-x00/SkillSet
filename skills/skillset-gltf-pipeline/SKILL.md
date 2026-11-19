@@ -1,5 +1,5 @@
 ---
-name: gltf-pipeline
+name: skillset-gltf-pipeline
 description: Export, validate and optimise glTF 2.0/GLB assets for web and game engines (Draco/Meshopt compression, KTX2 textures, LODs). Use when exporting 3D models, shrinking asset size, fixing glTF validation errors, or preparing models for three.js, Babylon, Godot, Unity or Unreal.
 ---
 

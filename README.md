@@ -4,8 +4,8 @@
 
 | Skill | Source |
 | --- | --- |
-| `blender-python` | custom |
-| `gltf-pipeline` | custom |
+| `skillset-blender-python` | custom |
+| `skillset-gltf-pipeline` | custom |
 
 | MCP server | Needs |
 | --- | --- |
