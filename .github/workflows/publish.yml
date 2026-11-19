@@ -1,0 +1,24 @@
+name: publish
+on:
+  release: { types: [published] }
+  workflow_dispatch:
+permissions: { contents: read, id-token: write }
+concurrency: { group: publish, cancel-in-progress: false }
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    environment: npm
+    steps:
+      - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
+      # Trusted publishing (OIDC) needs npm >= 11.5.1, shipped with Node 24.
+      - uses: actions/setup-node@v5
+        with: { node-version: 24, registry-url: https://registry.npmjs.org }
+      - name: Tag must match package.json version
+        if: github.event_name == 'release'
+        run: |
+          v=$(node -p "require('./package.json').version")
+          [ "${GITHUB_REF_NAME#v}" = "$v" ] || { echo "::error::tag $GITHUB_REF_NAME != version $v"; exit 1; }
+      - run: bun install --frozen-lockfile
+      - run: bun run check
+      - run: npm publish --provenance --access public
