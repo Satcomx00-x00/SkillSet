@@ -17,7 +17,7 @@ Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) 
 ## Install
 
 ```bash
-npx skill-set add code-rust
+npx topic-skillset add code-rust
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/code-rust
 /plugin install code-rust@skillset     # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
