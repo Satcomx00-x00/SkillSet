@@ -1,3 +1,8 @@
 {
-  "mcpServers": {}
+  "mcpServers": {
+    "rust-anything": {
+      "command": "npx",
+      "args": ["-y", "rust-anything@latest", "mcp"]
+    }
+  }
 }

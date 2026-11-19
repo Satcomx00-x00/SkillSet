@@ -6,8 +6,13 @@ Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean co
 | --- | --- |
 | `rust-idioms` | custom |
 | `rust-async` | custom |
+| `rust-anything` | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) (MIT, vendored, weekly updates) |
 
-No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) topic for engineering workflow skills.
+| MCP server | Needs |
+| --- | --- |
+| `rust-anything` ([npm](https://www.npmjs.com/package/rust-anything)) | Node 22+, Rust toolchain, and the runtime of the language you port from |
+
+Pair with the [`coding`](https://github.com/Satcomx00-x00/SkillSet/tree/coding) topic for engineering workflow skills.
 
 ## Install
 
