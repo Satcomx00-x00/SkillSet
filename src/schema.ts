@@ -72,6 +72,8 @@ export const TopicConfigSchema = z.object({
     .array(
       z.object({
         repo: repoSlug,
+        /** Middle segment of installed names: `skillset-<source>-<skill>`. Defaults to the repo owner. */
+        source: kebab.optional(),
         ref: z.string().min(1).default('HEAD'),
         path: z.string().default('skills'),
         skills: z.array(ImportedSkill).min(1),

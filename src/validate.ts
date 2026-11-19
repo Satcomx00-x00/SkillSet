@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { exists, parseWith, readJson } from './io.ts';
+import { BRAND, isQualified, qualify } from './naming.ts';
 import {
   MarketplaceSchema,
   McpConfigSchema,
@@ -49,7 +50,12 @@ const validateSkill = async (dir: string, name: string): Promise<Issue[]> => {
   if (!(await exists(file))) return [err(where, 'missing')];
   try {
     const fm = parseWith(SkillFrontmatterSchema, frontmatter(await readFile(file, 'utf8')), where);
-    return fm.name === name ? [] : [err(where, `name "${fm.name}" must match directory "${name}"`)];
+    return [
+      ...(fm.name === name ? [] : [err(where, `name "${fm.name}" must match directory "${name}"`)]),
+      ...(isQualified(name)
+        ? []
+        : [warn(where, `name should start with "${BRAND}-" (e.g. ${qualify(name)})`)]),
+    ];
   } catch (e) {
     return [err(where, (e as Error).message)];
   }

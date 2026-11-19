@@ -46,7 +46,7 @@ test('wrap keeps words intact', () => {
   expect(wrap('aa bb cc dd', 5)).toEqual(['aa bb', 'cc dd']);
 });
 
-test('loadTopicSummary reads a local topic and derives /setup', async () => {
+test('loadTopicSummary reads a local topic and derives /skillset-setup', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'skillset-info-'));
   await Bun.write(
     join(dir, '.claude-plugin/plugin.json'),
@@ -68,8 +68,8 @@ test('loadTopicSummary reads a local topic and derives /setup', async () => {
 
   const s = await loadTopicSummary('fallback', localSource(dir));
   expect(s.name).toBe('t');
-  expect(s.skills.map((l) => l.label)).toEqual(['setup', 'setup-x']);
-  expect(s.commands.map((l) => l.label)).toEqual(['/setup', '/setup-x']);
+  expect(s.skills.map((l) => l.label)).toEqual(['setup-x', 'skillset-setup']);
+  expect(s.commands.map((l) => l.label)).toEqual(['/setup-x', '/skillset-setup']);
   expect(s.mcp).toEqual([{ label: 'ctx', text: 'npx -y ctx' }]);
   expect(s.cli).toEqual([{ label: '$ brew install x', text: 'Get x' }]);
 });
