@@ -1,5 +1,5 @@
 ---
-name: k8s-manifests
+name: skillset-k8s-manifests
 description: Write production-ready Kubernetes manifests, Helm charts and Kustomize overlays - resources, probes, security context, autoscaling, disruption budgets, network policies and GitOps layout. Use when creating or reviewing Deployments, Services, Ingress/Gateway, Helm values, or hardening workloads.
 ---
 

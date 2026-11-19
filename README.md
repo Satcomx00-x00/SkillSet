@@ -4,8 +4,8 @@ Kubernetes infrastructure: production-ready manifests, Helm/Kustomize, and clust
 
 | Skill | Source |
 | --- | --- |
-| `k8s-manifests` | custom |
-| `k8s-troubleshooting` | custom |
+| `skillset-k8s-manifests` | custom |
+| `skillset-k8s-troubleshooting` | custom |
 
 | MCP server | Needs |
 | --- | --- |

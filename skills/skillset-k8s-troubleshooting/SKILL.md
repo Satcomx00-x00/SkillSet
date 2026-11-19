@@ -1,5 +1,5 @@
 ---
-name: k8s-troubleshooting
+name: skillset-k8s-troubleshooting
 description: Diagnose Kubernetes workloads read-only - CrashLoopBackOff, ImagePullBackOff, Pending pods, OOMKilled, failing probes, Service/Ingress routing and DNS issues. Use when a pod, deployment or service is unhealthy, or the user asks why something in the cluster is broken.
 ---
 
