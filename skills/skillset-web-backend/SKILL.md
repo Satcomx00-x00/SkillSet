@@ -1,5 +1,5 @@
 ---
-name: web-backend
+name: skillset-web-backend
 description: Design and implement secure, observable HTTP backends - REST/JSON API design, validation, authN/authZ, database access, errors, rate limiting, and caching (Node/Bun with Hono or Fastify, or any stack). Use when building or reviewing API endpoints, auth flows, database schemas or server middleware.
 ---
 

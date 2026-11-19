@@ -1,5 +1,5 @@
 ---
-name: web-frontend
+name: skillset-web-frontend
 description: Build accessible, fast, type-safe web UIs with React 19 / Next.js (App Router, Server Components), Tailwind and modern CSS. Use when creating or reviewing components, pages, forms, client state, or fixing accessibility, layout or Core Web Vitals issues.
 ---
 

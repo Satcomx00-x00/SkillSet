@@ -4,8 +4,8 @@ Web development: frontend (React, accessibility, performance) and backend (HTTP 
 
 | Skill | Source |
 | --- | --- |
-| `web-frontend` | custom |
-| `web-backend` | custom |
+| `skillset-web-frontend` | custom |
+| `skillset-web-backend` | custom |
 
 | MCP server | Needs |
 | --- | --- |
