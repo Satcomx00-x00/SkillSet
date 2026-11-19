@@ -12,7 +12,7 @@ No MCP servers yet. Pair with the [`coding`](https://github.com/Satcomx00-x00/Sk
 ## Install
 
 ```bash
-npx skill-set add code-typescript            # or: npx skill-set add coding code-typescript
+npx topic-skillset add code-typescript            # or: npx topic-skillset add coding code-typescript
 npx skills add https://github.com/Satcomx00-x00/SkillSet/tree/code-typescript
 /plugin install code-typescript@skillset     # after: /plugin marketplace add Satcomx00-x00/SkillSet
 ```
