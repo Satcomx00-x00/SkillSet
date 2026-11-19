@@ -26,7 +26,7 @@ TODO: instructions the agent follows.
 ${description}
 
 \`\`\`bash
-npx skill-set add ${name}            # skills + MCP
+npx topic-skillset add ${name}            # skills + MCP
 npx skills add https://github.com/${DEFAULT_REPO}/tree/${name}   # skills only
 \`\`\`
 

@@ -1,5 +1,5 @@
 {
-  "name": "skill-set",
+  "name": "topic-skillset",
   "version": "0.1.1",
   "description": "Install topic-scoped Agent Skills and MCP servers (one topic per git branch) into any coding agent.",
   "type": "module",
