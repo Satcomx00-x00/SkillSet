@@ -7,9 +7,10 @@ import { exists } from './io.ts';
 import { mergeServers } from './mcp/merge.ts';
 import { detectTargets, isTargetId, type Scope, TARGET_IDS, target } from './mcp/targets.ts';
 import { localRegistry, MARKETPLACE_PATH, type Registry, remoteRegistry } from './registry.ts';
-import { McpConfigSchema, type Topic } from './schema.ts';
+import { LockSchema, McpConfigSchema, type Topic } from './schema.ts';
+import { SETUP_PREFIX } from './setup-skill.ts';
 import { type SkillInstaller, vercelSkills } from './skills.ts';
-import { sync } from './sync.ts';
+import { LOCK_FILE, sync } from './sync.ts';
 import { topicFiles } from './templates.ts';
 import { type Issue, validateMarketplace, validateTopic } from './validate.ts';
 
@@ -89,6 +90,14 @@ const installMcp = async (topic: Topic) => {
   }
 };
 
+const hintSetup = async (topic: Topic) => {
+  const lock = await fetchJson(rawUrl(topic.repo, topic.ref, LOCK_FILE), LockSchema).catch(
+    () => undefined,
+  );
+  const setups = Object.keys(lock?.skills ?? {}).filter((n) => n.startsWith(SETUP_PREFIX));
+  if (setups.length) log(`  → run /setup in your agent to configure: ${setups.join(', ')}`);
+};
+
 const commands: Record<string, () => Promise<number>> = {
   async list() {
     const topics = await registry.list();
@@ -108,6 +117,7 @@ const commands: Record<string, () => Promise<number>> = {
           yes: o.yes,
         });
       await installMcp(topic);
+      await hintSetup(topic);
     }
     return 0;
   },

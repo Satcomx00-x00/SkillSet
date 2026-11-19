@@ -34,7 +34,7 @@
     "typecheck": "tsc",
     "lint": "biome check .",
     "test": "bun test",
-    "schemas": "bun scripts/gen-schemas.ts",
+    "schemas": "bun scripts/gen-schemas.ts && biome format --write schemas",
     "check": "npm run typecheck && npm run lint && npm test && bun src/cli.ts validate-marketplace"
   },
   "dependencies": {
