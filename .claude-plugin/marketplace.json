@@ -71,6 +71,28 @@
         "repo": "Satcomx00-x00/SkillSet",
         "ref": "3d-dev"
       }
+    },
+    {
+      "name": "web",
+      "description": "Web development: frontend (React, accessibility, performance) and backend (HTTP API design, auth, data). MCP: Playwright.",
+      "category": "development",
+      "tags": ["web", "frontend", "backend", "react", "api"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "web"
+      }
+    },
+    {
+      "name": "k8s-infra",
+      "description": "Kubernetes infrastructure: production-ready manifests, Helm/Kustomize, and cluster troubleshooting. MCP: kubernetes (read-only).",
+      "category": "infrastructure",
+      "tags": ["kubernetes", "helm", "kustomize", "devops"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "k8s-infra"
+      }
     }
   ]
 }
