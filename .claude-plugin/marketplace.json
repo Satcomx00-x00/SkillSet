@@ -41,7 +41,7 @@
     },
     {
       "name": "code-rust",
-      "description": "Rust: idiomatic ownership, error handling, async with Tokio, Clippy-clean code, and porting other languages to Rust (rust-anything). MCP: rust-anything.",
+      "description": "Rust: idiomatic ownership, error handling, best practices (Apollo), async patterns with Tokio, Clippy-clean code, and porting other languages to Rust (rust-anything). MCP: rust-anything.",
       "category": "development",
       "tags": ["rust", "tokio", "clippy"],
       "source": {
@@ -103,6 +103,50 @@
         "source": "github",
         "repo": "Satcomx00-x00/SkillSet",
         "ref": "security"
+      }
+    },
+    {
+      "name": "web-perf",
+      "description": "Web performance: Core Web Vitals, loading/bundle/image optimisation (addyosmani) and compositor-friendly animation (ibelick).",
+      "category": "development",
+      "tags": ["web", "performance", "core-web-vitals", "animation"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "web-perf"
+      }
+    },
+    {
+      "name": "ui-ux",
+      "description": "UI/UX design: Web Interface Guidelines (Vercel), design-system intelligence (UI UX Pro Max) and WCAG 2.2 accessibility (addyosmani).",
+      "category": "design",
+      "tags": ["ui", "ux", "design-system", "accessibility", "a11y"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "ui-ux"
+      }
+    },
+    {
+      "name": "database",
+      "description": "Databases: Postgres performance and best practices (Supabase): queries, indexes, pooling, locking, RLS, schema design.",
+      "category": "database",
+      "tags": ["database", "postgres", "supabase", "sql"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "database"
+      }
+    },
+    {
+      "name": "seo",
+      "description": "SEO: technical/on-page audits (coreyhaines), search best practices and structured data (addyosmani), site structure and internal linking (aaron-he-zhu).",
+      "category": "marketing",
+      "tags": ["seo", "marketing", "structured-data", "internal-linking"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "seo"
       }
     }
   ]

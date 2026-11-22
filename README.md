@@ -7,8 +7,12 @@ Topic-scoped [Agent Skills](https://agentskills.io) + MCP servers. **`main` hold
 | Coding     | [`coding`](../../tree/coding)                   | Language-agnostic engineering: TDD, debugging, design, review, commits · MCP: context7, sequential-thinking, GitHub |
 | TypeScript | [`code-typescript`](../../tree/code-typescript) | Strict typing, Zod at boundaries, Bun/Biome/Vitest tooling                                                          |
 | Python     | [`code-python`](../../tree/code-python)         | Typed Python with uv, Ruff, Pyright, pytest                                                                         |
-| Rust       | [`code-rust`](../../tree/code-rust)             | Idiomatic Rust, async Tokio, porting apps to Rust · MCP: rust-anything                                              |
+| Rust       | [`code-rust`](../../tree/code-rust)             | Idiomatic Rust, best practices, async patterns, porting apps to Rust · MCP: rust-anything                           |
 | Web        | [`web`](../../tree/web)                         | Frontend (React, a11y, perf) + backend (API design, auth, data) · MCP: Playwright                                   |
+| Web perf   | [`web-perf`](../../tree/web-perf)               | Core Web Vitals, loading/bundle/image optimisation, motion performance                                              |
+| UI/UX      | [`ui-ux`](../../tree/ui-ux)                     | Web Interface Guidelines, UI UX Pro Max design systems, WCAG accessibility                                          |
+| Database   | [`database`](../../tree/database)               | Postgres best practices (Supabase): queries, indexes, pooling, RLS                                                  |
+| SEO        | [`seo`](../../tree/seo)                         | SEO audits, structured data, site structure and internal linking                                                    |
 | Kubernetes | [`k8s-infra`](../../tree/k8s-infra)             | Production manifests, Helm/Kustomize, troubleshooting · MCP: kubernetes (read-only)                                 |
 | Game dev   | [`game-dev`](../../tree/game-dev)               | Godot 4 / GDScript, game loop architecture · MCP: godot-mcp                                                         |
 | 3D dev     | [`3d-dev`](../../tree/3d-dev)                   | Blender Python, glTF pipeline · MCP: blender-mcp                                                                    |
