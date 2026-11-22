@@ -1,0 +1,8 @@
+{
+  "name": "docs",
+  "description": "Documentation and technical writing: ADRs, legacy-codebase docs, technical prose and its review, writing shape and style guidelines.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
