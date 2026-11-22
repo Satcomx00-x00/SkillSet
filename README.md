@@ -6,6 +6,8 @@ Rust: idiomatic ownership, error handling, async with Tokio, and Clippy-clean co
 | --- | --- |
 | `skillset-rust-idioms` | custom |
 | `skillset-rust-async` | custom |
+| `skillset-apollo-rust-best-practices` | [apollographql/skills](https://github.com/apollographql/skills) (MIT, vendored, weekly updates) |
+| `skillset-wshobson-rust-async-patterns` | [wshobson/agents](https://github.com/wshobson/agents) (MIT, vendored, weekly updates) |
 | `skillset-rust-anything` | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) (MIT, vendored, weekly updates) |
 
 | MCP server | Needs |
