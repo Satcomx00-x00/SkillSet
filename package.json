@@ -25,7 +25,7 @@
     "schemas"
   ],
   "engines": {
-    "node": ">=22.4"
+    "node": ">=22.20"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -38,6 +38,7 @@
     "check": "npm run typecheck && npm run lint && npm test && bun src/cli.ts validate-marketplace"
   },
   "dependencies": {
+    "skills": "^1.9.0",
     "yaml": "^2.9.1",
     "zod": "^4.6.7"
   },
