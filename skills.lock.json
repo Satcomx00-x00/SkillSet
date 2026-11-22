@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "skillset-addyosmani-performance": {
+      "repo": "addyosmani/web-quality-skills",
+      "ref": "main",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "path": "skills/performance",
+      "license": "MIT License",
+      "integrity": "sha256-gMs7fqKQs3zIiXLtAg5LmjBEwaeL3pInxERAR/IQ5gg="
+    },
+    "skillset-ibelick-fixing-motion-performance": {
+      "repo": "ibelick/ui-skills",
+      "ref": "main",
+      "commit": "7ef0076fce1dfa39dd2bc43b7dc13add6eda8a41",
+      "path": "skills/fixing-motion-performance",
+      "license": "MIT License",
+      "integrity": "sha256-QDD66sag2v2FJdHC+IZJ84+k5HWsc/grBzAfGoGjnAc="
+    }
+  }
+}

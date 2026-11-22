@@ -1,0 +1,8 @@
+{
+  "name": "web-perf",
+  "description": "Web performance: Core Web Vitals, loading/bundle/image optimisation, and smooth, compositor-friendly animation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
