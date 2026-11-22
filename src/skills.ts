@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import { type Exec, exec } from './exec.ts';
 import { treeUrl } from './github.ts';
 import type { Topic } from './schema.ts';
@@ -15,8 +16,6 @@ export interface SkillInstaller {
 
 /** Builds the `skills add` argv (vercel-labs/skills, the cross-agent standard installer). */
 export const skillsAddArgs = (topic: Topic, o: SkillInstallOptions): string[] => [
-  '-y',
-  'skills@latest',
   'add',
   treeUrl(topic),
   ...o.agents.flatMap((a) => ['--agent', a]),
@@ -25,9 +24,18 @@ export const skillsAddArgs = (topic: Topic, o: SkillInstallOptions): string[] =>
   ...(o.yes ? ['--yes'] : []),
 ];
 
-export const vercelSkills = (run: Exec = exec): SkillInstaller => ({
+/**
+ * `skills` is a dependency, run with this Node binary. Not `npx skills`: nested under
+ * `npx topic-skillset` on Windows, npx leaks `npm_config_package` and grows PATH past
+ * cmd.exe's 8191-char limit, both ending in "'skills' is not recognized".
+ */
+const skillsCli = (): string => fileURLToPath(import.meta.resolve('skills/bin/cli.mjs'));
+
+export const vercelSkills = (run: Exec = exec, cli: () => string = skillsCli): SkillInstaller => ({
   async install(topic, opts) {
-    const { code } = await run('npx', skillsAddArgs(topic, opts));
+    const { code } = await run(process.execPath, [cli(), ...skillsAddArgs(topic, opts)], {
+      shell: false,
+    });
     if (code !== 0) throw new Error(`skills add failed for topic "${topic.name}" (exit ${code})`);
   },
 });

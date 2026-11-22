@@ -13,8 +13,6 @@ test('skillsAddArgs targets the topic branch tree URL', () => {
       yes: true,
     }),
   ).toEqual([
-    '-y',
-    'skills@latest',
     'add',
     'https://github.com/o/r/tree/coding',
     '--agent',
@@ -28,8 +26,39 @@ test('skillsAddArgs targets the topic branch tree URL', () => {
   ]);
 });
 
+test('installer runs the bundled skills CLI with node, no shell', async () => {
+  const calls: unknown[] = [];
+  const i = vercelSkills(
+    async (cmd, args, opts) => {
+      calls.push([cmd, args, opts]);
+      return { code: 0, stdout: '' };
+    },
+    () => '/skills/cli.mjs',
+  );
+  await i.install(topic, { agents: [], skills: [], global: false, yes: true });
+  expect(calls).toEqual([
+    [
+      process.execPath,
+      ['/skills/cli.mjs', 'add', 'https://github.com/o/r/tree/coding', '--yes'],
+      { shell: false },
+    ],
+  ]);
+});
+
+test('the skills CLI dependency resolves', async () => {
+  const calls: string[][] = [];
+  await vercelSkills(async (_cmd, args) => {
+    calls.push([...args]);
+    return { code: 0, stdout: '' };
+  }).install(topic, { agents: [], skills: [], global: false, yes: false });
+  expect(calls[0]?.[0]).toEndWith('cli.mjs');
+});
+
 test('installer surfaces non-zero exit', async () => {
-  const i = vercelSkills(async () => ({ code: 2, stdout: '' }));
+  const i = vercelSkills(
+    async () => ({ code: 2, stdout: '' }),
+    () => 'cli.mjs',
+  );
   expect(i.install(topic, { agents: [], skills: [], global: false, yes: true })).rejects.toThrow(
     'exit 2',
   );
