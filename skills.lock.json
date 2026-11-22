@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "skillset-supabase-postgres-best-practices": {
+      "repo": "supabase/agent-skills",
+      "ref": "main",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices",
+      "license": "MIT License",
+      "integrity": "sha256-36dXNQMjKHCCG8MP8VXu0BgXLqtDnt+f+b89fwZe1xo="
+    }
+  }
+}

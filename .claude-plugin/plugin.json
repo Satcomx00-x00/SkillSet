@@ -1,0 +1,8 @@
+{
+  "name": "database",
+  "description": "Databases: Postgres performance and best practices (Supabase): queries, indexes, RLS, connections, schema design.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Satcomx00-x00"
+  }
+}
