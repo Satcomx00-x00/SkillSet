@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Satcomx00-x00/SkillSet/main/schemas/skillset.schema.json",
+  "imports": [
+    {
+      "repo": "vercel-labs/agent-skills",
+      "source": "vercel",
+      "ref": "main",
+      "path": "skills",
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source": "nextlevel",
+      "ref": "main",
+      "path": ".claude/skills",
+      "skills": [
+        "ui-ux-pro-max"
+      ]
+    },
+    {
+      "repo": "addyosmani/web-quality-skills",
+      "source": "addyosmani",
+      "ref": "main",
+      "path": "skills",
+      "skills": [
+        "accessibility"
+      ]
+    }
+  ],
+  "info": {
+    "commands": [],
+    "cli": [],
+    "notes": [
+      "skillset-nextlevel-ui-ux-pro-max runs `python3 scripts/search.py` from its installed skill folder (needs Python 3); upstream docs show a .claude/skills/ui-ux-pro-max/ path instead."
+    ]
+  }
+}

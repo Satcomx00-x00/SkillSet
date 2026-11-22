@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "skillset-addyosmani-accessibility": {
+      "repo": "addyosmani/web-quality-skills",
+      "ref": "main",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "path": "skills/accessibility",
+      "license": "MIT License",
+      "integrity": "sha256-eiG9tDcVgg3UTlR/ySrlzHfMoZ/XRlt6SzCcohwqPe0="
+    },
+    "skillset-nextlevel-ui-ux-pro-max": {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "ref": "main",
+      "commit": "6ec2bb58334ca3014573c4cbd4834ee3a40afd9d",
+      "path": ".claude/skills/ui-ux-pro-max",
+      "license": "MIT License",
+      "integrity": "sha256-Ir8+VZmdTS/xX7fYT/qJdrylmVfv8LvcAv8/jEqMqZU="
+    },
+    "skillset-vercel-web-design-guidelines": {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "main",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "path": "skills/web-design-guidelines",
+      "license": null,
+      "integrity": "sha256-w/K5Ga1T1iGUb5hq+x2R1gUVfGdK05G6NBfTXCjF1hU="
+    }
+  }
+}
