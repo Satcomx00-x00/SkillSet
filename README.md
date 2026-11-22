@@ -13,6 +13,7 @@ Topic-scoped [Agent Skills](https://agentskills.io) + MCP servers. **`main` hold
 | UI/UX      | [`ui-ux`](../../tree/ui-ux)                     | Web Interface Guidelines, UI UX Pro Max design systems, WCAG accessibility                                          |
 | Database   | [`database`](../../tree/database)               | Postgres best practices (Supabase): queries, indexes, pooling, RLS                                                  |
 | SEO        | [`seo`](../../tree/seo)                         | SEO audits, structured data, site structure and internal linking                                                    |
+| Docs       | [`docs`](../../tree/docs)                       | ADRs, legacy-codebase docs, technical writing and prose review, writing guidelines                                  |
 | Kubernetes | [`k8s-infra`](../../tree/k8s-infra)             | Production manifests, Helm/Kustomize, troubleshooting · MCP: kubernetes (read-only)                                 |
 | Game dev   | [`game-dev`](../../tree/game-dev)               | Godot 4 / GDScript, game loop architecture · MCP: godot-mcp                                                         |
 | 3D dev     | [`3d-dev`](../../tree/3d-dev)                   | Blender Python, glTF pipeline · MCP: blender-mcp                                                                    |
