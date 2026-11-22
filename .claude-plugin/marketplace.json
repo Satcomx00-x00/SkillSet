@@ -148,6 +148,17 @@
         "repo": "Satcomx00-x00/SkillSet",
         "ref": "seo"
       }
+    },
+    {
+      "name": "docs",
+      "description": "Documentation and technical writing: ADRs and doc drift (addyosmani), legacy-codebase docs, technical writing and prose review (riekelt), article shape (mattpocock), writing guidelines (vercel).",
+      "category": "documentation",
+      "tags": ["docs", "technical-writing", "adr", "style-guide"],
+      "source": {
+        "source": "github",
+        "repo": "Satcomx00-x00/SkillSet",
+        "ref": "docs"
+      }
     }
   ]
 }
