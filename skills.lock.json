@@ -1,13 +1,29 @@
 {
   "version": 1,
   "skills": {
+    "skillset-apollo-rust-best-practices": {
+      "repo": "apollographql/skills",
+      "ref": "main",
+      "commit": "9dda1397730370aeb8df4ff8f2015c34c86b5003",
+      "path": "skills/rust-best-practices",
+      "license": "MIT License",
+      "integrity": "sha256-ngHgXAagi84xXpA41i3fgMECsJyoyLeGPEghNo3+LHs="
+    },
     "skillset-rust-anything": {
       "repo": "erkamyaman/rust-anything",
       "ref": "main",
-      "commit": "a17a9e7060e2e0ece83c6fe93dce5aa0f43e0d13",
+      "commit": "c0862b8696b51779f4b32d16ad57b3601f75fb12",
       "path": "skills/rust-anything",
       "license": "MIT License",
-      "integrity": "sha256-Lnt2BWr0u5PvEvwj7rszPd+OVqjb8xLaF9K/uichsXc="
+      "integrity": "sha256-9lmAX8xvG+7+rsOFL/235pwoPLmzKyd00VCg1r9w0QI="
+    },
+    "skillset-wshobson-rust-async-patterns": {
+      "repo": "wshobson/agents",
+      "ref": "main",
+      "commit": "12bcec79ec7f24868bc75fe8cd21428ebf5e96d0",
+      "path": "plugins/systems-programming/skills/rust-async-patterns",
+      "license": "MIT License",
+      "integrity": "sha256-2B3ZF3xXXhyxqiLChA3FZjxcbPSqdnW64NnBDEn9RXo="
     }
   }
 }

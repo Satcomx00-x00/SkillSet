@@ -30,6 +30,24 @@
         "rust-anything"
       ],
       "source": "rust-anything"
+    },
+    {
+      "repo": "apollographql/skills",
+      "source": "apollo",
+      "ref": "main",
+      "path": "skills",
+      "skills": [
+        "rust-best-practices"
+      ]
+    },
+    {
+      "repo": "wshobson/agents",
+      "source": "wshobson",
+      "ref": "main",
+      "path": "plugins/systems-programming/skills",
+      "skills": [
+        "rust-async-patterns"
+      ]
     }
   ]
 }
