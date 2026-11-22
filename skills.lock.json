@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "skillset-aaron-site-structure-optimizer": {
+      "repo": "aaron-he-zhu/aaron-marketing-skills",
+      "ref": "main",
+      "commit": "d95e536ea055019a595ff6325667b0f77e7999f3",
+      "path": "seo-geo/tune/site-structure-optimizer",
+      "license": "Apache License",
+      "integrity": "sha256-VO4ZlLfntkW4iuF44SZnyy0Yp2RsE1Mfj31b6QTRU7Y="
+    },
+    "skillset-addyosmani-seo": {
+      "repo": "addyosmani/web-quality-skills",
+      "ref": "main",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "path": "skills/seo",
+      "license": "MIT License",
+      "integrity": "sha256-vPpumYCEz4it+/xfiGSI22qbx0mhhOpjy/GBQ1LQeto="
+    },
+    "skillset-coreyhaines-seo-audit": {
+      "repo": "coreyhaines31/marketingskills",
+      "ref": "main",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "path": "skills/seo-audit",
+      "license": "MIT License",
+      "integrity": "sha256-VakfrC+pOGx+8hxwsRGpf6fdDCzWjG+1FqTHclrCPkQ="
+    }
+  }
+}
