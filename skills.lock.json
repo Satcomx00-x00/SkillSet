@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "skillset-addyosmani-documentation-and-adrs": {
+      "repo": "addyosmani/agent-skills",
+      "ref": "main",
+      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+      "path": "skills/documentation-and-adrs",
+      "license": "MIT License",
+      "integrity": "sha256-VN6+rde74SxVCMxkYfz1nvHtCPinePAGSRWfLf5U2Y0="
+    },
+    "skillset-mattpocock-writing-shape": {
+      "repo": "mattpocock/skills",
+      "ref": "main",
+      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "path": "skills/in-progress/writing-shape",
+      "license": "MIT License",
+      "integrity": "sha256-G8zXEeu0+qvf6QzcGxtYmSakofJG51l9lTwAdmz1B0w="
+    },
+    "skillset-riekelt-documenting-legacy-codebases": {
+      "repo": "riekelt/technical-writer",
+      "ref": "main",
+      "commit": "85e53729dd959a2795d593d6769068e342cf3486",
+      "path": "plugins/technical-writer/skills/documenting-legacy-codebases",
+      "license": "MIT License",
+      "integrity": "sha256-SyKygiI/fewpmBW8KDqZe7kKnMV3vZ85/yE6NMJr7s0="
+    },
+    "skillset-riekelt-reviewing-technical-prose": {
+      "repo": "riekelt/technical-writer",
+      "ref": "main",
+      "commit": "85e53729dd959a2795d593d6769068e342cf3486",
+      "path": "plugins/technical-writer/skills/reviewing-technical-prose",
+      "license": "MIT License",
+      "integrity": "sha256-mE1eRanqU6V8Yky/ybreA/2XcFwqsX82h1KisINIfck="
+    },
+    "skillset-riekelt-technical-writing": {
+      "repo": "riekelt/technical-writer",
+      "ref": "main",
+      "commit": "85e53729dd959a2795d593d6769068e342cf3486",
+      "path": "plugins/technical-writer/skills/technical-writing",
+      "license": "MIT License",
+      "integrity": "sha256-J1IukGbXQ5DlNnv7j+XamWol/5I2YKIZZwMDq3zI5EM="
+    },
+    "skillset-vercel-writing-guidelines": {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "main",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "path": "skills/writing-guidelines",
+      "license": null,
+      "integrity": "sha256-uT5DRvmLS8TkbUTE9j83zAlCuXAuJypm68W9hKroa4o="
+    }
+  }
+}

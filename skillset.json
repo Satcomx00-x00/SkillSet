@@ -1,4 +1,39 @@
 {
   "$schema": "https://raw.githubusercontent.com/Satcomx00-x00/SkillSet/main/schemas/skillset.schema.json",
-  "imports": []
+  "imports": [
+    {
+      "repo": "addyosmani/agent-skills",
+      "source": "addyosmani",
+      "ref": "main",
+      "path": "skills",
+      "skills": ["documentation-and-adrs"]
+    },
+    {
+      "repo": "riekelt/technical-writer",
+      "source": "riekelt",
+      "ref": "main",
+      "path": "plugins/technical-writer/skills",
+      "skills": ["documenting-legacy-codebases", "technical-writing", "reviewing-technical-prose"]
+    },
+    {
+      "repo": "mattpocock/skills",
+      "source": "mattpocock",
+      "ref": "main",
+      "path": "skills/in-progress",
+      "skills": ["writing-shape"],
+      "setup": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "source": "vercel",
+      "ref": "main",
+      "path": "skills",
+      "skills": ["writing-guidelines"]
+    }
+  ],
+  "info": {
+    "commands": [],
+    "cli": [],
+    "notes": []
+  }
 }
