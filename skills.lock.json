@@ -12,7 +12,7 @@
     "skillset-rust-anything": {
       "repo": "erkamyaman/rust-anything",
       "ref": "main",
-      "commit": "c0862b8696b51779f4b32d16ad57b3601f75fb12",
+      "commit": "d1f3255e224134eb83c26a90a5478e732c5bc5ef",
       "path": "skills/rust-anything",
       "license": "MIT License",
       "integrity": "sha256-9lmAX8xvG+7+rsOFL/235pwoPLmzKyd00VCg1r9w0QI="
@@ -20,7 +20,7 @@
     "skillset-wshobson-rust-async-patterns": {
       "repo": "wshobson/agents",
       "ref": "main",
-      "commit": "12bcec79ec7f24868bc75fe8cd21428ebf5e96d0",
+      "commit": "51b9ae3ac68d9c236549a9b57f5dca7e6c0c168c",
       "path": "plugins/systems-programming/skills/rust-async-patterns",
       "license": "MIT License",
       "integrity": "sha256-2B3ZF3xXXhyxqiLChA3FZjxcbPSqdnW64NnBDEn9RXo="
