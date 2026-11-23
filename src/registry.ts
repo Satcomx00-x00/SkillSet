@@ -1,5 +1,7 @@
+import { join } from 'node:path';
+import { BUNDLE_MARKETPLACE } from './bundle.ts';
 import { fetchJson, rawUrl } from './github.ts';
-import { readJson } from './io.ts';
+import { exists, readJson } from './io.ts';
 import { type Marketplace, MarketplaceSchema, type Topic, toTopics } from './schema.ts';
 
 export const MARKETPLACE_PATH = '.claude-plugin/marketplace.json';
@@ -38,3 +40,14 @@ export const remoteRegistry = (repo: string, ref = 'main'): Registry =>
 
 export const localRegistry = (file = MARKETPLACE_PATH): Registry =>
   fromLoader(() => readJson(file, MarketplaceSchema));
+
+/** The marketplace snapshot embedded at build time (see `scripts/bundle.ts`). */
+export const bundledRegistry = (root: string): Registry =>
+  fromLoader(async () => {
+    const file = join(root, BUNDLE_MARKETPLACE);
+    if (!(await exists(file)))
+      throw new Error(
+        `--offline: this build has no bundled topics (${file}). Rebuild with \`npm run build\`.`,
+      );
+    return readJson(file, MarketplaceSchema);
+  });

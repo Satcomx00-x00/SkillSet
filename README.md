@@ -56,6 +56,17 @@ Before the package is on npm, use `npx github:Satcomx00-x00/SkillSet add coding`
 
 MCP merges never touch servers you already have unless `--force`. Secrets are `${ENV_VAR}` references, never literals.
 
+### Offline mode
+
+Every build embeds a snapshot of all topic branches (`npm run build` runs `scripts/bundle.ts`, which `git archive`s each branch listed in the marketplace into `bundle/`). With `--offline`, `list`, `add` and `info` read only that snapshot: no GitHub URLs, no `raw.githubusercontent.com`, no API calls, and the `skills` CLI runs with telemetry off and `--copy`.
+
+```bash
+npx topic-skillset add coding --offline -a claude-code -y
+npx topic-skillset list --offline
+```
+
+The snapshot is as fresh as the installed CLI version. MCP servers that launch via `npx` still need a registry the first time they start.
+
 ## Topic branch layout
 
 ```

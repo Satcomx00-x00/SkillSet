@@ -3,14 +3,15 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 import { renderBanner } from './banner.ts';
-import { DEFAULT_REPO, fetchJson, rawUrl } from './github.ts';
-import { exists } from './io.ts';
+import { type Catalog, offlineCatalog, onlineCatalog } from './catalog.ts';
+import { DEFAULT_REPO } from './github.ts';
+import { exists, parseWith } from './io.ts';
 import { mergeServers } from './mcp/merge.ts';
 import { detectTargets, isTargetId, type Scope, TARGET_IDS, target } from './mcp/targets.ts';
-import { localRegistry, MARKETPLACE_PATH, type Registry, remoteRegistry } from './registry.ts';
+import { localRegistry, MARKETPLACE_PATH, remoteRegistry } from './registry.ts';
 import { McpConfigSchema, type Topic } from './schema.ts';
 import { type SkillInstaller, vercelSkills } from './skills.ts';
-import { githubSource, localSource, type TopicSource } from './source.ts';
+import { localSource, type TopicSource } from './source.ts';
 import { sync } from './sync.ts';
 import { topicFiles } from './templates.ts';
 import { loadTopicSummary } from './topic-info.ts';
@@ -38,7 +39,8 @@ Options (add)
 
 Global
   -r, --repo <owner/repo>  Source repo (default ${DEFAULT_REPO}, env SKILLSET_REPO)
-      --local              Read marketplace from ./${MARKETPLACE_PATH}`;
+      --local              Read marketplace from ./${MARKETPLACE_PATH}
+      --offline            Use the topics bundled in this build; never fetch from GitHub`;
 
 const { values: o, positionals } = parseArgs({
   allowPositionals: true,
@@ -55,13 +57,17 @@ const { values: o, positionals } = parseArgs({
     json: { type: 'boolean', default: false },
     repo: { type: 'string', short: 'r', default: DEFAULT_REPO },
     local: { type: 'boolean', default: false },
+    offline: { type: 'boolean', default: false },
     description: { type: 'string', short: 'd' },
     help: { type: 'boolean', short: 'h', default: false },
   },
 });
 
 const [cmd, ...args] = positionals;
-const registry: Registry = o.local ? localRegistry() : remoteRegistry(o.repo);
+const catalog: Catalog = o.offline
+  ? offlineCatalog()
+  : onlineCatalog(o.local ? localRegistry() : remoteRegistry(o.repo));
+const { registry } = catalog;
 const installer: SkillInstaller = vercelSkills();
 const log = (s = '') => console.log(s);
 
@@ -74,7 +80,9 @@ const report = (issues: readonly Issue[]): number => {
 };
 
 const installMcp = async (topic: Topic) => {
-  const cfg = await fetchJson(rawUrl(topic.repo, topic.ref, '.mcp.json'), McpConfigSchema);
+  const raw = await catalog.source(topic).text('.mcp.json');
+  const cfg =
+    raw === undefined ? undefined : parseWith(McpConfigSchema, JSON.parse(raw), '.mcp.json');
   if (!cfg || !Object.keys(cfg.mcpServers).length) return log(`  ${topic.name}: no MCP servers`);
   const requested = o.mcp.length ? o.mcp : await detectTargets(process.cwd());
   if (requested.includes('none')) return;
@@ -108,14 +116,15 @@ const commands: Record<string, () => Promise<number>> = {
     for (const topic of await Promise.all(args.map((a) => registry.get(a)))) {
       log(`▸ ${topic.name}`);
       if (o.skills)
-        await installer.install(topic, {
+        await installer.install(topic, catalog.location(topic), {
           agents: o.agent,
           skills: o.skill,
           global: o.global,
           yes: o.yes,
+          offline: catalog.offline,
         });
       await installMcp(topic);
-      await printSummary(topic.name, githubSource(topic)).catch((e: unknown) =>
+      await printSummary(topic.name, catalog.source(topic)).catch((e: unknown) =>
         console.error(`  (summary unavailable: ${e instanceof Error ? e.message : String(e)})`),
       );
     }
@@ -130,7 +139,10 @@ const commands: Record<string, () => Promise<number>> = {
     if (!args.length) throw new Error('info: missing <topic> or <dir>');
     for (const a of args) {
       const local = a.startsWith('.') || a.startsWith('/');
-      await printSummary(a, local ? localSource(resolve(a)) : githubSource(await registry.get(a)));
+      await printSummary(
+        a,
+        local ? localSource(resolve(a)) : catalog.source(await registry.get(a)),
+      );
     }
     return 0;
   },

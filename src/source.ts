@@ -14,8 +14,11 @@ const timeout = () => AbortSignal.timeout(15_000);
 
 export const githubSource = ({ repo, ref }: Pick<Topic, 'repo' | 'ref'>): TopicSource => ({
   async text(path) {
-    const res = await fetch(rawUrl(repo, ref, path), { signal: timeout() });
-    return res.ok ? res.text() : undefined;
+    const url = rawUrl(repo, ref, path);
+    const res = await fetch(url, { signal: timeout() });
+    if (res.status === 404) return undefined;
+    if (!res.ok) throw new Error(`GET ${url} → ${res.status} ${res.statusText}`);
+    return res.text();
   },
   async dirs(dir) {
     const url = `https://api.github.com/repos/${repo}/contents/${dir}?ref=${encodeURIComponent(ref)}`;
