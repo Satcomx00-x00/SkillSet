@@ -22,13 +22,14 @@
   },
   "files": [
     "dist",
+    "bundle",
     "schemas"
   ],
   "engines": {
     "node": ">=22.20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && node scripts/bundle.ts",
     "prepare": "npm run build",
     "dev": "bun src/cli.ts",
     "typecheck": "tsc",

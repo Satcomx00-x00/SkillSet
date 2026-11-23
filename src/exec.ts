@@ -10,6 +10,8 @@ export interface ExecOptions {
   readonly capture?: boolean;
   /** Run through a shell. Defaults to true on Windows so `.cmd` shims (git, npx) resolve. */
   readonly shell?: boolean;
+  /** Extra environment variables, merged over `process.env`. */
+  readonly env?: Readonly<Record<string, string>>;
 }
 
 /** Process runner seam: swap in tests, keep commands side-effect free. */
@@ -22,13 +24,14 @@ export type Exec = (
 export const exec: Exec = (
   cmd,
   args,
-  { cwd, capture = false, shell = process.platform === 'win32' } = {},
+  { cwd, capture = false, shell = process.platform === 'win32', env } = {},
 ) =>
   new Promise((resolve, reject) => {
     const child = spawn(cmd, args, {
       cwd,
       stdio: capture ? ['ignore', 'pipe', 'inherit'] : 'inherit',
       shell,
+      ...(env && { env: { ...process.env, ...env } }),
     });
     let stdout = '';
     child.stdout?.on('data', (d: Buffer) => {
