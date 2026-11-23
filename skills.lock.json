@@ -4,7 +4,7 @@
     "skillset-bughunter-apk-redteam-pipeline": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/apk-redteam-pipeline",
       "license": "MIT License",
       "integrity": "sha256-uNLuwnJI1Jy2Yt2jTqb1DVQNYBKtZtLHtBMi2p5Qz20="
@@ -12,7 +12,7 @@
     "skillset-bughunter-bb-local-toolkit": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/bb-local-toolkit",
       "license": "MIT License",
       "integrity": "sha256-OuIyejiEjI0fn8HlZIQ+izssjRwRVtUWr4WUE3gJElU="
@@ -20,7 +20,7 @@
     "skillset-bughunter-bb-methodology": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/bb-methodology",
       "license": "MIT License",
       "integrity": "sha256-h4m/jTyLZ/N3uv1eSNSFY61snb6jR0kNdejcjTAgYhE="
@@ -28,7 +28,7 @@
     "skillset-bughunter-bug-bounty": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/bug-bounty",
       "license": "MIT License",
       "integrity": "sha256-ljLmSkftCB1wwpH9glb3qhWQ98wbB1Lr5AZGGW20l3M="
@@ -36,7 +36,7 @@
     "skillset-bughunter-bugcrowd-reporting": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/bugcrowd-reporting",
       "license": "MIT License",
       "integrity": "sha256-xGMxZx5WnTKcVoY8nvEwsvQ+OqqEEmJi2Sg2ZBtaS/s="
@@ -44,7 +44,7 @@
     "skillset-bughunter-cloud-iam-deep": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/cloud-iam-deep",
       "license": "MIT License",
       "integrity": "sha256-KpaBHFG0Zp9rb1bQDlVGkw++hwBTH557TfItn9O12P0="
@@ -52,7 +52,7 @@
     "skillset-bughunter-enterprise-vpn-attack": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/enterprise-vpn-attack",
       "license": "MIT License",
       "integrity": "sha256-lJxbl6YKquszf8sLX4vapEwWqJwVDLEM40MF1B4s7/o="
@@ -60,7 +60,7 @@
     "skillset-bughunter-evidence-hygiene": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/evidence-hygiene",
       "license": "MIT License",
       "integrity": "sha256-ra13C5s8xf7bTThi4ZVIt6U3hz0NaF+tEX6+9fi8lcs="
@@ -68,7 +68,7 @@
     "skillset-bughunter-hunt-api-misconfig": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-api-misconfig",
       "license": "MIT License",
       "integrity": "sha256-vZ10R6u/LmXzTqztNmMNc7nPGUskFUq8TqvAL6Alg2s="
@@ -76,7 +76,7 @@
     "skillset-bughunter-hunt-aspnet": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-aspnet",
       "license": "MIT License",
       "integrity": "sha256-YGZKQJv2pI05EAXX/YzdeFKtnH6kRmPjb/+7WPTozJ0="
@@ -84,7 +84,7 @@
     "skillset-bughunter-hunt-ato": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-ato",
       "license": "MIT License",
       "integrity": "sha256-gZi5ZOqxhCIEw7qnJQjS2qRrqq3g91CaRRcnGTCShyo="
@@ -92,7 +92,7 @@
     "skillset-bughunter-hunt-auth-bypass": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-auth-bypass",
       "license": "MIT License",
       "integrity": "sha256-DGr4483kl0jNuen4C8Wom0gimmv4YZELZtjcKznt84k="
@@ -100,7 +100,7 @@
     "skillset-bughunter-hunt-brute-force": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-brute-force",
       "license": "MIT License",
       "integrity": "sha256-m2jvd1zi0iIoY6df98Y38P+ddv9xFf+bWKAo2wvTyDk="
@@ -108,7 +108,7 @@
     "skillset-bughunter-hunt-business-logic": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-business-logic",
       "license": "MIT License",
       "integrity": "sha256-xr4LCugrstEJ1RScMbGOxNJLnibLDm9BHW1p8aqNghI="
@@ -116,7 +116,7 @@
     "skillset-bughunter-hunt-cache-poison": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-cache-poison",
       "license": "MIT License",
       "integrity": "sha256-KZ4lyZreEY3oMsGXSBz+E/gCOaynwvpAg8MX1PVPNdA="
@@ -124,7 +124,7 @@
     "skillset-bughunter-hunt-captcha-bypass": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-captcha-bypass",
       "license": "MIT License",
       "integrity": "sha256-hurWHOJlvLckuaWVH9aD5lkqOO1jexCpmHKLGINNiSA="
@@ -132,7 +132,7 @@
     "skillset-bughunter-hunt-cicd": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-cicd",
       "license": "MIT License",
       "integrity": "sha256-XRgEW1Yj4oQwZBjUv1EX0DWiau0xVFy7DLeORLD2t+0="
@@ -140,7 +140,7 @@
     "skillset-bughunter-hunt-clickjacking": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-clickjacking",
       "license": "MIT License",
       "integrity": "sha256-jld5eD/StDJu1iAWB1PFO3pJsL5ciC5oJCF0asEB+ZQ="
@@ -148,7 +148,7 @@
     "skillset-bughunter-hunt-cloud-misconfig": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-cloud-misconfig",
       "license": "MIT License",
       "integrity": "sha256-4VP4pWX8zecu8I5ou+88+DlB/HDsG8szlzJmFbNa7mk="
@@ -156,7 +156,7 @@
     "skillset-bughunter-hunt-cors": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-cors",
       "license": "MIT License",
       "integrity": "sha256-WusZnZ/jFtxuh02yyACr8SFZp1dCq6OSDCUI5LQ7Z+E="
@@ -164,7 +164,7 @@
     "skillset-bughunter-hunt-csrf": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-csrf",
       "license": "MIT License",
       "integrity": "sha256-jIvpXEEUd/7RScrQNqHadLFP1Ni0jX+or1QL/+cfW8c="
@@ -172,7 +172,7 @@
     "skillset-bughunter-hunt-deserialization": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-deserialization",
       "license": "MIT License",
       "integrity": "sha256-I7D/C5de0e6E2lBhOQB0W4jetgyfI71cHX5o9HYIpt8="
@@ -180,7 +180,7 @@
     "skillset-bughunter-hunt-dispatch": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-dispatch",
       "license": "MIT License",
       "integrity": "sha256-CEI75WrK83p3P9dAuoRkREXLvp4CuDWZEBwptbdUdUk="
@@ -188,7 +188,7 @@
     "skillset-bughunter-hunt-dom": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-dom",
       "license": "MIT License",
       "integrity": "sha256-eZGOWSfEgrUW3GCRjjvxu88R6inIbHRdkIw1CQvGP8A="
@@ -196,7 +196,7 @@
     "skillset-bughunter-hunt-exceptional-conditions": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-exceptional-conditions",
       "license": "MIT License",
       "integrity": "sha256-JFN/IX+Upow2g8VRPS8IprmeDWpsyEq7kNu0Bc6rRgI="
@@ -204,7 +204,7 @@
     "skillset-bughunter-hunt-file-upload": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-file-upload",
       "license": "MIT License",
       "integrity": "sha256-AsTnB31oErU0acHQoewmL1B3IkmvdsnkWamu8KIj6u8="
@@ -212,7 +212,7 @@
     "skillset-bughunter-hunt-fintech-graphql": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-fintech-graphql",
       "license": "MIT License",
       "integrity": "sha256-NP/JuTVWwNWjxx4Zy+XPB/6wacYpCB6rUAJEnrHcR7I="
@@ -220,7 +220,7 @@
     "skillset-bughunter-hunt-forgot-password": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-forgot-password",
       "license": "MIT License",
       "integrity": "sha256-ifp0RIUo4iN+ij8QXMZncYSGU1WRP+yYApXlXmzhDb4="
@@ -228,7 +228,7 @@
     "skillset-bughunter-hunt-graphql": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-graphql",
       "license": "MIT License",
       "integrity": "sha256-5M+ARO+12ZfrzQe+4PdST+vndvd23XBmW4mQPd7CVO4="
@@ -236,7 +236,7 @@
     "skillset-bughunter-hunt-grpc": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-grpc",
       "license": "MIT License",
       "integrity": "sha256-8x0eWT0ye9Ingr6YMGEPN6gIJlnen89FPTq8/b+NC4U="
@@ -244,7 +244,7 @@
     "skillset-bughunter-hunt-host-header": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-host-header",
       "license": "MIT License",
       "integrity": "sha256-JEbr5yM6By+9XlMLdB47u5/oeFckxHUhatMU7O3SzDg="
@@ -252,7 +252,7 @@
     "skillset-bughunter-hunt-html-injection": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-html-injection",
       "license": "MIT License",
       "integrity": "sha256-QpcqxzjCWogV+vdpA6XkPiCJC+eeiCR5ArWqAjN9yNM="
@@ -260,7 +260,7 @@
     "skillset-bughunter-hunt-http-smuggling": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-http-smuggling",
       "license": "MIT License",
       "integrity": "sha256-AwQg054ZHYJkBi4h9637uwZwWWrf0QduL+p2gNfqEPs="
@@ -268,7 +268,7 @@
     "skillset-bughunter-hunt-idor": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-idor",
       "license": "MIT License",
       "integrity": "sha256-qD6AaZVMcNuvTREgfq50qz7NoERaV38ONrwIoqIT7OY="
@@ -276,7 +276,7 @@
     "skillset-bughunter-hunt-jwt-crypto": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-jwt-crypto",
       "license": "MIT License",
       "integrity": "sha256-u07TKzr0J9+NO8vQiB9m6w9AX5F6Aa/im35v7vD5YQE="
@@ -284,7 +284,7 @@
     "skillset-bughunter-hunt-k8s": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-k8s",
       "license": "MIT License",
       "integrity": "sha256-/fXR0rF2wD+zmb1rBlUuyd/lKYeFixFg7551K0dKuvs="
@@ -292,7 +292,7 @@
     "skillset-bughunter-hunt-laravel": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-laravel",
       "license": "MIT License",
       "integrity": "sha256-BqBTzAQjTDWm+xj5z2EDvUATu+0yAV5TXTVeV10IQkc="
@@ -300,7 +300,7 @@
     "skillset-bughunter-hunt-ldap": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-ldap",
       "license": "MIT License",
       "integrity": "sha256-oxUGwGkS1zl7474P12vUAZjptAm+8qkXENoUTIC8LsQ="
@@ -308,7 +308,7 @@
     "skillset-bughunter-hunt-lfi": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-lfi",
       "license": "MIT License",
       "integrity": "sha256-QN4DRXAWibgcb4yC8ToIjKZdqAYPmbc05Hx1nDBQO/0="
@@ -316,7 +316,7 @@
     "skillset-bughunter-hunt-llm-ai": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-llm-ai",
       "license": "MIT License",
       "integrity": "sha256-ZnNySrekUxuC7TAvmlCOk37gcWLlvhg/9RlOJHQ3Jbg="
@@ -324,7 +324,7 @@
     "skillset-bughunter-hunt-mfa-bypass": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-mfa-bypass",
       "license": "MIT License",
       "integrity": "sha256-VzeVshhGjrK7nHKqKl3LkFQ/hwmt4n4p57l5bmxabBs="
@@ -332,7 +332,7 @@
     "skillset-bughunter-hunt-misc": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-misc",
       "license": "MIT License",
       "integrity": "sha256-//gNvZ4R3idwWvkmGqFncdZNGItv/SB+VsW9C5Deap4="
@@ -340,7 +340,7 @@
     "skillset-bughunter-hunt-nextjs": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-nextjs",
       "license": "MIT License",
       "integrity": "sha256-WAlfFRz3yXELi5jNjZrA/0jDTYOHKQDjDSDauk0xAHI="
@@ -348,7 +348,7 @@
     "skillset-bughunter-hunt-nodejs": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-nodejs",
       "license": "MIT License",
       "integrity": "sha256-mYbtU+/P7HkF6BHKUqV6+ZVuOwRn78/XRYmtuWVoGpM="
@@ -356,7 +356,7 @@
     "skillset-bughunter-hunt-nosqli": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-nosqli",
       "license": "MIT License",
       "integrity": "sha256-GJY7xOepkWLYZTD/oc19VO37Z56BbQNw07gulOF5I/c="
@@ -364,7 +364,7 @@
     "skillset-bughunter-hunt-ntlm-info": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-ntlm-info",
       "license": "MIT License",
       "integrity": "sha256-izU5GqBJip1I9JcKEmJlgyNXxyRHgWuoj/3ugjTC8NA="
@@ -372,7 +372,7 @@
     "skillset-bughunter-hunt-oauth": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-oauth",
       "license": "MIT License",
       "integrity": "sha256-L8RtHvqo606VEDVTPGnoXOIyRnd0NJ7riFJhrfby5rg="
@@ -380,7 +380,7 @@
     "skillset-bughunter-hunt-open-redirect": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-open-redirect",
       "license": "MIT License",
       "integrity": "sha256-3y2RnHULnNBqpiNyTQL1WeeqFsGM4pLI4xKJPKbZLHA="
@@ -388,7 +388,7 @@
     "skillset-bughunter-hunt-race-condition": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-race-condition",
       "license": "MIT License",
       "integrity": "sha256-VzEc0fGf0THN534Sqd6Yrp19yu/1Qm62wZ6xd3zLSms="
@@ -396,7 +396,7 @@
     "skillset-bughunter-hunt-rag-vector": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-rag-vector",
       "license": "MIT License",
       "integrity": "sha256-IZHwnqrwSUr9eQvpJDVk/o5OJoN3aS7lsEgYQEULvcg="
@@ -404,7 +404,7 @@
     "skillset-bughunter-hunt-rce": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-rce",
       "license": "MIT License",
       "integrity": "sha256-gZ3PSfr4LFrYYlay5WkerQqgXPCZ4DSLGCXimACPMCY="
@@ -412,7 +412,7 @@
     "skillset-bughunter-hunt-saml": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-saml",
       "license": "MIT License",
       "integrity": "sha256-klTPI8AezjTeAPjPCmV6cx3lHcXT5JOzSTsTHYMVtOM="
@@ -420,7 +420,7 @@
     "skillset-bughunter-hunt-session": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-session",
       "license": "MIT License",
       "integrity": "sha256-2lTWdA1geGeiYwAPplBBIwBvm38YBJPMJmnYifH3Bkg="
@@ -428,7 +428,7 @@
     "skillset-bughunter-hunt-shadow-api": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-shadow-api",
       "license": "MIT License",
       "integrity": "sha256-yBSt2eU8b0z+W8coZ9m8KsoGaOw1CP37O6pl5aQZr+0="
@@ -436,7 +436,7 @@
     "skillset-bughunter-hunt-sharepoint": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-sharepoint",
       "license": "MIT License",
       "integrity": "sha256-Wkj+Jv52koWxsODM5YpPw791kW+pQNAk+s+AF+QQz0k="
@@ -444,7 +444,7 @@
     "skillset-bughunter-hunt-source-leak": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-source-leak",
       "license": "MIT License",
       "integrity": "sha256-L19h0IjBY2/LnjPmt8dDb0ca5B8JzCdvMkYqcOO6f0I="
@@ -452,7 +452,7 @@
     "skillset-bughunter-hunt-spa-api": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-spa-api",
       "license": "MIT License",
       "integrity": "sha256-v5o07O2OBTyQcjQ7nKqtviYQpnP0PxvItc0n6KgZjNA="
@@ -460,7 +460,7 @@
     "skillset-bughunter-hunt-springboot": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-springboot",
       "license": "MIT License",
       "integrity": "sha256-jv3nKRmb/AhPHPjKaEbaqeL3e8wVwH2x3tYmDXSy5Aw="
@@ -468,7 +468,7 @@
     "skillset-bughunter-hunt-sqli": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-sqli",
       "license": "MIT License",
       "integrity": "sha256-f8ABvvoscF6xzOOuxebTM9j109KDh8U8c5VkBNiRmco="
@@ -476,7 +476,7 @@
     "skillset-bughunter-hunt-ssrf": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-ssrf",
       "license": "MIT License",
       "integrity": "sha256-Fnx5eyMwn4snfOllY0faptW6aFKvVM1Ivs/p+DVwU8U="
@@ -484,7 +484,7 @@
     "skillset-bughunter-hunt-ssti": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-ssti",
       "license": "MIT License",
       "integrity": "sha256-3yqwzgkbSR1UONSbqR8gYWvFXrrMoPfJG9epDP8Ooho="
@@ -492,7 +492,7 @@
     "skillset-bughunter-hunt-subdomain": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-subdomain",
       "license": "MIT License",
       "integrity": "sha256-+pNT7nlqXy/1e1vDqq7qie5JQ682US+GVkUfQRZ4FbE="
@@ -500,7 +500,7 @@
     "skillset-bughunter-hunt-tls-network": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-tls-network",
       "license": "MIT License",
       "integrity": "sha256-HmKTjkdePP3YfyxWKLgGZX5lHBpi/SQECCf7arUqwyc="
@@ -508,7 +508,7 @@
     "skillset-bughunter-hunt-websocket": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-websocket",
       "license": "MIT License",
       "integrity": "sha256-EEDuU0rEGXDpYI4btQZ1hYd7zOlOiZDmiXPPB+Jxqys="
@@ -516,7 +516,7 @@
     "skillset-bughunter-hunt-xss": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-xss",
       "license": "MIT License",
       "integrity": "sha256-VNg3qP7cJosQToYkvsABVTLItGBkk3nnXg68bcZjk+c="
@@ -524,7 +524,7 @@
     "skillset-bughunter-hunt-xxe": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/hunt-xxe",
       "license": "MIT License",
       "integrity": "sha256-cihIzq971sAWBoPDd3UWmJY+Rrk8cNeo9kNVuvCffEU="
@@ -532,7 +532,7 @@
     "skillset-bughunter-ios-redteam-pipeline": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/ios-redteam-pipeline",
       "license": "MIT License",
       "integrity": "sha256-1tgR8FFAwcYcmdyc8YktJJHCd/7SjlZJDl+BhBEHNvM="
@@ -540,7 +540,7 @@
     "skillset-bughunter-m365-entra-attack": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/m365-entra-attack",
       "license": "MIT License",
       "integrity": "sha256-mRjKbORsIDUsmIXX7yEn/QoAUx8/bMtp5p0SW0nWjUg="
@@ -548,7 +548,7 @@
     "skillset-bughunter-meme-coin-audit": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/meme-coin-audit",
       "license": "MIT License",
       "integrity": "sha256-jYVJtyd8wCuB5+BMLc1GCzZOO+34kTKcnxF+1+D/YDY="
@@ -556,7 +556,7 @@
     "skillset-bughunter-mid-engagement-ir-detection": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/mid-engagement-ir-detection",
       "license": "MIT License",
       "integrity": "sha256-AtrpFvDUOf2m98QdLdT4/gni2wyROdHBZ43uHJ+mAEY="
@@ -564,15 +564,15 @@
     "skillset-bughunter-offensive-osint": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/offensive-osint",
       "license": "MIT License",
-      "integrity": "sha256-FOTAQt2Us6u0dcbhZAal04HnWhfyuGSQMy6P+C7qtoI="
+      "integrity": "sha256-5ob8wmfiqY7RQX/p1TiOvCtVeRrDK1jDmLvw2RQbMJM="
     },
     "skillset-bughunter-okta-attack": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/okta-attack",
       "license": "MIT License",
       "integrity": "sha256-9Lo4+lR8PN8XZ2vtVFkEJKrCGxpBA9rd0O3Kh26E0aw="
@@ -580,7 +580,7 @@
     "skillset-bughunter-osint-methodology": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/osint-methodology",
       "license": "MIT License",
       "integrity": "sha256-5I1vcqlKr9R/dng6fTkak+TjbQ37oga2uIFdn9qXCgA="
@@ -588,7 +588,7 @@
     "skillset-bughunter-recon-scope-triage": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/recon-scope-triage",
       "license": "MIT License",
       "integrity": "sha256-Z6sjuIyOCcim41cqbrfO+HFv9IGW5nSKnLKUPPuPY9E="
@@ -596,7 +596,7 @@
     "skillset-bughunter-redteam-mindset": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/redteam-mindset",
       "license": "MIT License",
       "integrity": "sha256-tpF1ocfrAdkBSwg+aGSveXFSVaFMKQ48WEKrWTx+pR4="
@@ -604,7 +604,7 @@
     "skillset-bughunter-redteam-report-template": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/redteam-report-template",
       "license": "MIT License",
       "integrity": "sha256-+BLpe15YrqZiolPKstPwFXVTxY/nlc3iZp8JHQ4u+Dc="
@@ -612,7 +612,7 @@
     "skillset-bughunter-report-writing": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/report-writing",
       "license": "MIT License",
       "integrity": "sha256-nfjDoldFtgFKN3cJiEPxRiKECJ6VZ4Gyp9bo3Cv75U8="
@@ -620,7 +620,7 @@
     "skillset-bughunter-security-arsenal": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/security-arsenal",
       "license": "MIT License",
       "integrity": "sha256-+aHoGvRU3i+356zYiWnHZ7nnh5pnH5B0z6Jix1KdHHI="
@@ -628,7 +628,7 @@
     "skillset-bughunter-supply-chain-attack-recon": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/supply-chain-attack-recon",
       "license": "MIT License",
       "integrity": "sha256-w+0/tCLaE+7hACunlDgLuU47htffWJfHiQIb26laSDY="
@@ -636,7 +636,7 @@
     "skillset-bughunter-triage-validation": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/triage-validation",
       "license": "MIT License",
       "integrity": "sha256-fJUjkCIWYNhh0qkX9pj9m2a1DYp7AN5bBxQ5vXwtrY0="
@@ -644,7 +644,7 @@
     "skillset-bughunter-vmware-vcenter-attack": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/vmware-vcenter-attack",
       "license": "MIT License",
       "integrity": "sha256-bfATEormU5hzVkHgnRZMkF0/AU6ghgW7LOzYrYBRLcQ="
@@ -652,7 +652,7 @@
     "skillset-bughunter-web2-recon": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/web2-recon",
       "license": "MIT License",
       "integrity": "sha256-KB7sPUx3EOrKQxFu9EBvXHtmaQDuXQ60Ej5OCNEjfmc="
@@ -660,7 +660,7 @@
     "skillset-bughunter-web3-audit": {
       "repo": "elementalsouls/Claude-BugHunter",
       "ref": "main",
-      "commit": "9bdb0a81658bc25f09c0b52d31fcde923d126e4f",
+      "commit": "5601278eac03eacc0a8a85485006512de1a16ff6",
       "path": "skills/web3-audit",
       "license": "MIT License",
       "integrity": "sha256-pYtaigFifuMQR0Llbd1lIXa+3Ef0WbLl9ipuqrAKExs="
