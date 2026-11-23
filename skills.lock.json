@@ -12,10 +12,10 @@
     "skillset-nextlevel-ui-ux-pro-max": {
       "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "ref": "main",
-      "commit": "6ec2bb58334ca3014573c4cbd4834ee3a40afd9d",
+      "commit": "281e4537afb11333ac9947783779aaf314ebfbf2",
       "path": ".claude/skills/ui-ux-pro-max",
       "license": "MIT License",
-      "integrity": "sha256-Ir8+VZmdTS/xX7fYT/qJdrylmVfv8LvcAv8/jEqMqZU="
+      "integrity": "sha256-qXEsxEZR+zepcYhF/js6HBFP7FxMSN4KbsL7PO/8js4="
     },
     "skillset-vercel-web-design-guidelines": {
       "repo": "vercel-labs/agent-skills",
